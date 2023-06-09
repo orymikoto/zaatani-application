@@ -18,12 +18,12 @@ return new class extends Migration
       $table->decimal('harga', 12, 2);
       $table->string('satuan');
       $table->string('alamat');
-      $table->unsignedBigInteger('penjual_id');
-      $table->unsignedBigInteger('kategori_id');
+      $table->unsignedBigInteger('id_pengguna');
+      $table->unsignedBigInteger('id_kategori');
       $table->timestamps();
 
-      $table->foreign('penjual_id')->references('id')->on('penjual');
-      $table->foreign('kategori_id')->references('id')->on('kategori_produk');
+      $table->foreign('id_pengguna')->references('id_pengguna')->on('pengguna');
+      $table->foreign('id_kategori')->references('id_kategori')->on('kategori_produk');
     });
   }
 

@@ -21,3 +21,5 @@ Route::get('/', function () {
 Route::get('/keranjang', [KeranjangController::class, 'index'])->name('keranjang.index');
 Route::put('/keranjang/{id}/increase', [KeranjangController::class, 'increaseQuantity'])->name('keranjang.increase');
 Route::put('/keranjang/{id}/decrease', [KeranjangController::class, 'decreaseQuantity'])->name('keranjang.decrease');
+
+Route::get('/login', [Authenc::class, 'index'])->name('keranjang.index');
