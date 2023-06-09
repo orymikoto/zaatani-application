@@ -9,31 +9,31 @@ return new class extends Migration
   /**
    * Run the migrations.
    */
-  public function up(): void
+  public function up()
   {
-    Schema::create('barang', function (Blueprint $table) {
-      $table->increments('id_barang');
-      $table->string('nama_produk');
-      $table->string('deskripsi');
-      $table->string('berat');
-      $table->string('komposisi');
-      $table->string('harga');
+    Schema::create('produk', function (Blueprint $table) {
+      $table->id();
+      $table->string('nama');
+      $table->text('deskripsi');
+      $table->decimal('harga', 12, 2);
       $table->string('satuan');
-
-      // FOREIGN KEY COLUMN
-      $table->integer('id_kategori')->unsigned();
-      $table->integer('id_username')->unsigned();
-
-      // FOREIGN KEY RELATION
+      $table->string('alamat');
+      $table->unsignedBigInteger('penjual_id');
+      $table->unsignedBigInteger('kategori_id');
       $table->timestamps();
+
+      $table->foreign('penjual_id')->references('id')->on('penjual');
+      $table->foreign('kategori_id')->references('id')->on('kategori_produk');
     });
   }
+
+
 
   /**
    * Reverse the migrations.
    */
-  public function down(): void
+  public function down()
   {
-    Schema::dropIfExists('barang');
+    Schema::dropIfExists('produk');
   }
 };
