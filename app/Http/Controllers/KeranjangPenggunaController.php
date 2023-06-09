@@ -7,59 +7,30 @@ use Illuminate\Http\Request;
 
 class KeranjangPenggunaController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        //
+  public function index()
+  {
+    $keranjangItems = KeranjangPengguna::all();
+
+    return view('keranjang.index', compact('keranjangItems'));
+  }
+
+  public function increaseQuantity(Request $request, $id)
+  {
+    $keranjangItem = KeranjangPengguna::findOrFail($id);
+    $keranjangItem->jumlah += 1;
+    $keranjangItem->save();
+
+    return redirect()->route('keranjang.index');
+  }
+
+  public function decreaseQuantity(Request $request, $id)
+  {
+    $keranjangItem = KeranjangPengguna::findOrFail($id);
+    if ($keranjangItem->jumlah > 1) {
+      $keranjangItem->jumlah -= 1;
+      $keranjangItem->save();
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(KeranjangPengguna $keranjangPengguna)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(KeranjangPengguna $keranjangPengguna)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, KeranjangPengguna $keranjangPengguna)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(KeranjangPengguna $keranjangPengguna)
-    {
-        //
-    }
+    return redirect()->route('keranjang.index');
+  }
 }

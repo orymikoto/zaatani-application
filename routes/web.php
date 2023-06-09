@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  return view('welcome');
 });
 
-Route::get('/keranjang', [KeranjangPenggunaController::class, 'index'])->name('cart.index');
-Route::post('/keranjang/increment/{id_keranjang}', [KeranjangPenggunaController::class, 'incrementQuantity'])->name('cart.increment');
-Route::post('/keranjang/decrement/{id_keranjang}', [KeranjangPenggunaController::class, 'decrementQuantity'])->name('cart.decrement');
+Route::get('/keranjang', [KeranjangController::class, 'index'])->name('keranjang.index');
+Route::put('/keranjang/{id}/increase', [KeranjangController::class, 'increaseQuantity'])->name('keranjang.increase');
+Route::put('/keranjang/{id}/decrease', [KeranjangController::class, 'decreaseQuantity'])->name('keranjang.decrease');

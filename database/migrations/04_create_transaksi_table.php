@@ -18,8 +18,8 @@ return new class extends Migration
       $table->decimal('jumlah', 8, 2);
       $table->timestamps();
 
-      $table->foreign('produk_id')->references('id')->on('produk');
-      $table->foreign('user_id')->references('id')->on('users');
+      $table->foreign('id_produk')->references('id')->on('produk');
+      $table->foreign('id_pengguna')->references('id')->on('pengguna');
     });
   }
 
