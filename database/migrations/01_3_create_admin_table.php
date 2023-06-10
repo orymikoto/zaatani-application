@@ -9,30 +9,25 @@ return new class extends Migration
   /**
    * Run the migrations.
    */
-  public function up()
+  public function up(): void
   {
-    Schema::create('pengguna', function (Blueprint $table) {
-      $table->increments('id_pengguna');
+    Schema::create('admin', function (Blueprint $table) {
+      $table->increments('id_admin');
       $table->string('email')->unique();
+      $table->string('nama');
       $table->string('password');
-      $table->string('nama_lengkap');
       $table->string('nomor_telepon');
-      $table->enum('jenis_kelamin', ['Laki-laki', 'Perempuan']);
-      $table->date('tanggal_lahir');
-      $table->string('provinsi');
-      $table->string('kota');
       $table->string('foto_profil')->nullable();
       $table->string('banner_profil')->nullable();
       $table->timestamps();
     });
   }
 
-
   /**
    * Reverse the migrations.
    */
-  public function down()
+  public function down(): void
   {
-    Schema::dropIfExists('pengguna');
+    Schema::dropIfExists('admin');
   }
 };

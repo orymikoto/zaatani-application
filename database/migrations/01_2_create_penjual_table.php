@@ -14,9 +14,10 @@ return new class extends Migration
     Schema::create('penjual', function (Blueprint $table) {
       $table->increments('id_penjual');
       $table->string('email')->unique();
+      $table->string('password');
       $table->string('nama_lengkap');
       $table->string('nomor_telepon');
-      $table->integer('nomor_rekening');
+      $table->string('nomor_rekening');
       $table->enum('jenis_kelamin', ['Laki-laki', 'Perempuan']);
       $table->date('tanggal_lahir');
       $table->string('provinsi');
