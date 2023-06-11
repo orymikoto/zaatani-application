@@ -27,24 +27,13 @@ namespace App\Models{
 
 namespace App\Models{
 /**
- * App\Models\Barang
+ * App\Models\KategoriProduk
  *
- * @method static \Illuminate\Database\Eloquent\Builder|Barang newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Barang newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Barang query()
+ * @method static \Illuminate\Database\Eloquent\Builder|KategoriProduk newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|KategoriProduk newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|KategoriProduk query()
  */
-	class Barang extends \Eloquent {}
-}
-
-namespace App\Models{
-/**
- * App\Models\KategoriBarang
- *
- * @method static \Illuminate\Database\Eloquent\Builder|KategoriBarang newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|KategoriBarang newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|KategoriBarang query()
- */
-	class KategoriBarang extends \Eloquent {}
+	class KategoriProduk extends \Eloquent {}
 }
 
 namespace App\Models{
@@ -158,6 +147,39 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|Penjual whereUpdatedAt($value)
  */
 	class Penjual extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
+ * App\Models\Produk
+ *
+ * @property int $id_produk
+ * @property string $nama
+ * @property string $deskripsi
+ * @property string $harga
+ * @property string $satuan
+ * @property string $alamat
+ * @property int $id_penjual
+ * @property int $id_kategori
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \App\Models\KategoriProduk $kategoriProduk
+ * @property-read \App\Models\Penjual $penjual
+ * @method static \Illuminate\Database\Eloquent\Builder|Produk newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Produk newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Produk query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Produk whereAlamat($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Produk whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Produk whereDeskripsi($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Produk whereHarga($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Produk whereIdKategori($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Produk whereIdPenjual($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Produk whereIdProduk($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Produk whereNama($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Produk whereSatuan($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Produk whereUpdatedAt($value)
+ */
+	class Produk extends \Eloquent {}
 }
 
 namespace App\Models{

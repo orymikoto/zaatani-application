@@ -15,9 +15,9 @@ return new class extends Migration
       $table->increments('id_produk');
       $table->string('nama');
       $table->text('deskripsi');
-      $table->decimal('harga', 12, 2);
+      $table->integer('harga');
       $table->string('satuan');
-      $table->string('alamat');
+      $table->string('foto_produk');
 
       $table->integer('id_penjual')->unsigned();
       $table->integer('id_kategori')->unsigned();
