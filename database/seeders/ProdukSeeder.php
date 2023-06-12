@@ -102,7 +102,7 @@ class ProdukSeeder extends Seeder
       Produk::create([
         'nama' => $faker->sentence(3),
         'deskripsi' => $faker->paragraph(4),
-        'harga' => $faker->random_int(10000, 210000,),
+        'harga' => $faker->numberBetween(10000, 210000,),
         'satuan' => $faker->randomElement(['kg', 'pcs', 'meter']),
         'foto_produk' => $faker->imageUrl(400, 400),
         'id_penjual' => $faker->randomElement($penjuals),

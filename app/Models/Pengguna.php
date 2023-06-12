@@ -24,6 +24,7 @@ class Pengguna extends Authenticatable
     'tanggal_lahir',
     'provinsi',
     'kota',
+    'alamat',
     'foto_profil',
     'banner_profil',
   ];

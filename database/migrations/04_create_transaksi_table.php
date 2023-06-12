@@ -16,8 +16,11 @@ return new class extends Migration
       $table->unsignedInteger('id_produk');
       $table->unsignedInteger('id_pengguna');
       $table->unsignedInteger('id_penjual');
-      $table->integer('jumlah');
+      $table->date('tanggal_pemesanan');
+      $table->string('alamat_pengiriman');
+      $table->integer('biaya_aplikasi');
       $table->integer('total_harga');
+      $table->boolean('status_pembayaran');
       $table->timestamps();
 
       $table->foreign('id_produk')->references('id_produk')->on('produk');

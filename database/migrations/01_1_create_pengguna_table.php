@@ -21,6 +21,7 @@ return new class extends Migration
       $table->date('tanggal_lahir');
       $table->string('provinsi');
       $table->string('kota');
+      $table->string('alamat');
       $table->string('foto_profil')->nullable();
       $table->string('banner_profil')->nullable();
       $table->timestamps();

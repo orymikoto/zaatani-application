@@ -14,10 +14,8 @@ return new class extends Migration
     Schema::create('pembayaran', function (Blueprint $table) {
       $table->increments('id_pembayaran');
       $table->unsignedInteger('id_transaksi');
-      $table->string('metode_pembayaran');
+      $table->enum('metode_pembayaran', ['Transfer Bank', 'Transfer E-Money', 'COD']);
       $table->string('bukti_pembayaran')->nullable();
-      $table->integer('jumlah_pembayaran');
-      $table->boolean('status_pembayaran');
       $table->timestamps();
 
       $table->foreign('id_transaksi')->references('id_transaksi')->on('transaksi')->onDelete('cascade');

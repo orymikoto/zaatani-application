@@ -12,6 +12,8 @@ class Admin extends Model
 {
   use HasApiTokens, HasFactory, Notifiable;
 
+  protected $table = 'admin';
+  protected $primaryKey = 'id_admin';
   protected $fillable = [
     'email',
     'nama',
