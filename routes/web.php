@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthenticationController;
 use App\Http\Controllers\KeranjangPenggunaController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,4 +23,4 @@ Route::get('/keranjang', [KeranjangController::class, 'index'])->name('keranjang
 Route::put('/keranjang/{id}/increase', [KeranjangController::class, 'increaseQuantity'])->name('keranjang.increase');
 Route::put('/keranjang/{id}/decrease', [KeranjangController::class, 'decreaseQuantity'])->name('keranjang.decrease');
 
-Route::get('/login', [Authenc::class, 'index'])->name('keranjang.index');
+Route::get('/login', [AuthenticationController::class, 'login'])->name('login');
