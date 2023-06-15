@@ -8,6 +8,7 @@
   <title>Zaatani</title>
   @vite('resources/js/app.js')
 
+
 </head>
 
 <body class="w-full flex flex-col items-center justify-center relative min-h-screen bg-neutral-200">
@@ -16,7 +17,8 @@
     {{-- FORM LOGIN --}}
     <div class=" min-w-[21rem] max-w-[21rem] flex flex-col items-center h-full">
       <h2 class="font-carterone text-sky-700 text-3xl">Zaatani Application</h2>
-      <p class="font-lobster text-xs text-neutral-500 text-center w-[10rem]">Modernisasi segala proses pertanian guna menyejahterakan kehidupan petani</p>
+      <p class="font-lobster text-xs text-neutral-500 text-center w-[10rem]">Modernisasi segala proses pertanian guna
+        menyejahterakan kehidupan petani</p>
     </div>
     {{-- BACKGROUND --}}
     <div class="flex-1 bg-cover bg-center bg-[url('/images/auth-bg.jpg')]"></div>
