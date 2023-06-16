@@ -12,18 +12,20 @@ return new class extends Migration
   public function up()
   {
     Schema::create('produk', function (Blueprint $table) {
-      $table->id();
+      $table->increments('id_produk');
       $table->string('nama');
       $table->text('deskripsi');
       $table->decimal('harga', 12, 2);
       $table->string('satuan');
       $table->string('alamat');
-      $table->unsignedBigInteger('id_pengguna');
-      $table->unsignedBigInteger('id_kategori');
-      $table->timestamps();
 
-      $table->foreign('id_pengguna')->references('id_pengguna')->on('pengguna');
+      $table->integer('id_penjual')->unsigned();
+      $table->integer('id_kategori')->unsigned();
+
+      $table->foreign('id_penjual')->references('id_penjual')->on('penjual');
       $table->foreign('id_kategori')->references('id_kategori')->on('kategori_produk');
+
+      $table->timestamps();
     });
   }
 

@@ -13,13 +13,14 @@ return new class extends Migration
   {
     Schema::create('keranjang_pengguna', function (Blueprint $table) {
       $table->increments('id_keranjang_pengguna');
-      $table->unsignedBigInteger('id_produk');
-      $table->unsignedBigInteger('id_pengguna');
+      $table->unsignedInteger('id_produk');
+      $table->unsignedInteger('id_pengguna');
       $table->integer('jumlah');
+      $table->integer('total_harga');
       $table->timestamps();
 
-      $table->foreign('produk_id')->references('id')->on('produk');
-      $table->foreign('user_id')->references('id')->on('users');
+      $table->foreign('id_produk')->references('id_produk')->on('produk');
+      $table->foreign('id_pengguna')->references('id_pengguna')->on('pengguna');
     });
   }
 

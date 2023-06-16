@@ -6,22 +6,29 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
-    public function up(): void
-    {
-        Schema::create('pembelians', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
-    }
+  /**
+   * Run the migrations.
+   */
+  public function up()
+  {
+    Schema::create('pembayaran', function (Blueprint $table) {
+      $table->increments('id_pembayaran');
+      $table->unsignedInteger('id_transaksi');
+      $table->string('metode_pembayaran');
+      $table->string('bukti_pembayaran')->nullable();
+      $table->integer('jumlah_pembayaran');
+      $table->boolean('status_pembayaran');
+      $table->timestamps();
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists('pembelians');
-    }
+      $table->foreign('id_transaksi')->references('id_transaksi')->on('transaksi')->onDelete('cascade');
+    });
+  }
+
+  /**
+   * Reverse the migrations.
+   */
+  public function down(): void
+  {
+    Schema::dropIfExists('pembayaran');
+  }
 };

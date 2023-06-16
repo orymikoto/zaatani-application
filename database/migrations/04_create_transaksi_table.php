@@ -12,14 +12,17 @@ return new class extends Migration
   public function up()
   {
     Schema::create('transaksi', function (Blueprint $table) {
-      $table->id();
-      $table->unsignedBigInteger('produk_id');
-      $table->unsignedBigInteger('user_id');
-      $table->decimal('jumlah', 8, 2);
+      $table->increments('id_transaksi');
+      $table->unsignedInteger('id_produk');
+      $table->unsignedInteger('id_pengguna');
+      $table->unsignedInteger('id_penjual');
+      $table->integer('jumlah');
+      $table->integer('total_harga');
       $table->timestamps();
 
-      $table->foreign('id_produk')->references('id')->on('produk');
-      $table->foreign('id_pengguna')->references('id')->on('pengguna');
+      $table->foreign('id_produk')->references('id_produk')->on('produk');
+      $table->foreign('id_pengguna')->references('id_pengguna')->on('pengguna');
+      $table->foreign('id_penjual')->references('id_penjual')->on('penjual');
     });
   }
 
