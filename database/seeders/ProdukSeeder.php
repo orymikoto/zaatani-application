@@ -25,40 +25,22 @@ class ProdukSeeder extends Seeder
           'nama_kategori' => 'Beras',
         ],
         [
-          'nama_kategori' => 'Buah',
+          'nama_kategori' => 'Biji',
         ],
         [
-          'nama_kategori' => 'Hasil Hutan - Kayu',
+          'nama_kategori' => 'Umbi',
         ],
         [
-          'nama_kategori' => 'Hasil Hutan - Non Kayu',
-        ],
-        [
-          'nama_kategori' => 'Ikan',
-        ],
-        [
-          'nama_kategori' => 'Kopi',
-        ],
-        [
-          'nama_kategori' => 'Teh',
-        ],
-        [
-          'nama_kategori' => 'Makanan',
-        ],
-        [
-          'nama_kategori' => 'Minuman',
-        ],
-        [
-          'nama_kategori' => 'Pakan',
+          'nama_kategori' => 'Pertaninan Organik',
         ],
         [
           'nama_kategori' => 'Sayuran',
         ],
         [
-          'nama_kategori' => 'Hasil Ternak',
+          'nama_kategori' => 'Pupuk dan Obat',
         ],
         [
-          'nama_kategori' => 'Kerajinan',
+          'nama_kategori' => 'Mesin dan Alat',
         ],
       ]
     );
@@ -79,18 +61,18 @@ class ProdukSeeder extends Seeder
         'id_kategori' => 2,
       ],
       [
-        'nama' => 'Apel Malang',
+        'nama' => 'Kacang Mede',
         'deskripsi' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ratione voluptas ipsam sed perferendis illum. Officiis illo laborum dignissimos quisquam?',
-        'harga' => 23000,
+        'harga' => 40000,
         'satuan' => 'Kg',
         'foto_produk' => '/images/foto_produk/2.jpg',
         'id_penjual' => 1,
         'id_kategori' => 3,
       ],
       [
-        'nama' => 'Salak Semmboro',
+        'nama' => 'Ubi Ungu',
         'deskripsi' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ratione voluptas ipsam sed perferendis illum. Officiis illo laborum dignissimos quisquam?',
-        'harga' => 15000,
+        'harga' => 22000,
         'satuan' => 'Kg',
         'foto_produk' => '/images/foto_produk/3.jpg',
         'id_penjual' => 1,
