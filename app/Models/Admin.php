@@ -16,6 +16,7 @@ class Admin extends Model
   protected $primaryKey = 'id_admin';
   protected $fillable = [
     'email',
+    'password',
     'nama',
     'password',
     'nomor_telepon',

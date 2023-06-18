@@ -34,4 +34,9 @@ class Penjual extends Authenticatable
   protected $hidden = [
     'password'
   ];
+
+  public function produk()
+  {
+    return $this->hasMany(Produk::class, 'id_penjual', 'id_penjual');
+  }
 }

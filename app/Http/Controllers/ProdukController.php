@@ -5,12 +5,12 @@ namespace App\Http\Controllers;
 use App\Models\Produk;
 use Illuminate\Http\Request;
 
-class ProdukController extends Controller
+class   ProdukController extends Controller
 {
   // VIEW METHOD
   public function mart()
   {
-    $produk = Produk::all();
+    $produk = Produk::with('penjual')->get();
     return view('produk.daftar-produk')->with(array('produk' => $produk));
   }
 
@@ -23,7 +23,7 @@ class ProdukController extends Controller
   public function detail_produk($id_produk)
   {
     $produk_detail = Produk::whereIdProduk($id_produk)->first();
-    return view('produk.daftar-produk-kategori')->with(array('produk' => $produk_detail));
+    return view('produk.detail-produk')->with(array('produk' => $produk_detail));
   }
 
   public function beli_produk($id_produk)

@@ -26,11 +26,11 @@ class Produk extends Model
   // Define the relationships
   public function penjual()
   {
-    return $this->belongsTo(Penjual::class, 'id_penjual');
+    return $this->belongsTo(Penjual::class, 'id_penjual', 'id_penjual');
   }
 
   public function kategoriProduk()
   {
-    return $this->belongsTo(KategoriProduk::class, 'id_kategori');
+    return $this->belongsTo(KategoriProduk::class, 'id_kategori', 'id_kategori_produk');
   }
 }

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zaatani</title>
+  @vite('resources/js/app.js')
+
+</head>
+
+<body class="antialiased flex flex-col items-center relative min-h-screen justify-between bg-neutral-50">
+  <x-navbar />
+
+  <main class="flex flex-col min-w-[1280px] w-[90%]">
+
+  </main>
+
+  <x-footer />
+</body>
+
+</html>

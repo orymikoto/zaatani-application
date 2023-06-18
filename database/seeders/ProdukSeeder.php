@@ -80,7 +80,7 @@ class ProdukSeeder extends Seeder
       ],
     ]);
 
-    for ($i = 1; $i <= 50; $i++) {
+    for ($i = 1; $i <= 200; $i++) {
       Produk::create([
         'nama' => $faker->sentence(3),
         'deskripsi' => $faker->paragraph(4),
