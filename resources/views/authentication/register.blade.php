@@ -11,7 +11,7 @@
 </head>
 
 <body class="w-full flex flex-col items-center justify-center relative min-h-screen bg-neutral-200">
-  <x-flash-message />
+  <x-flash-message url="/register" />
   <div class="w-[80%] h-[40rem] rounded-lg shadow-[7px_7px_21px_-14px_rgba(0,0,0,0.4)] bg-white flex overflow-hidden">
 
     {{-- FORM LOGIN --}}
@@ -42,7 +42,7 @@
               class="flex-1  duration-200 cursor-pointer font-poppins text-center font-medium text-lg py-1 {{ request()->get('role') == 'penjual' ? 'text-white bg-teal-600' : 'hover:text-white text-teal-600 hover:bg-teal-600' }}">Penjual</a>
           </div>
         </div>
-        <form action="/register" class="my-4 grid grid-cols-12 gap-2 mx-2" method="POST">
+        <form action="/register?role={{ request()->get('role') }}" class="my-4 grid grid-cols-12 gap-2 mx-2" method="POST">
           @csrf
           <div class="col-span-6 flex flex-col items-start w-full">
             <p class="text-yellow-500 font-medium mx-2">Email</p>

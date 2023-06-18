@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class signed
+class pengguna
 {
   /**
    * Handle an incoming request.
@@ -15,10 +15,10 @@ class signed
    */
   public function handle(Request $request, Closure $next): Response
   {
-    if (auth('pengguna')->check() || auth('admin')->check() || auth('penjual')->check()) {
+    if (auth('pengguna')->check()) {
       return $next($request);
     }
-    session()->flash('pesan', 'Silahkan login akun terlebih dahulu');
-    return redirect('/login');
+    session()->flash('pesan', 'Silahkan login sebagai pengguna untuk membuka laman tersebut');
+    return redirect('/');
   }
 }

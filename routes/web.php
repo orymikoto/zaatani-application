@@ -31,8 +31,8 @@ Route::put('/keranjang/{id}/decrease', [KeranjangController::class, 'decreaseQua
 // AUTHENTICATION
 Route::get('/login', [AuthenticationController::class, 'login'])->name('login');
 Route::get('/register', [AuthenticationController::class, 'register'])->name('register');
-Route::post('/login', [AuthenticationController::class, 'login'])->name('login_post');
-Route::post('/register', [AuthenticationController::class, 'register'])->name('register_post');
+Route::post('/login', [AuthenticationController::class, 'login_post'])->name('login_post');
+Route::post('/register', [AuthenticationController::class, 'register_post'])->name('register_post');
 
 // PROFILE 
 Route::get('/profile', [ProfileController::class, 'profile'])->name('profile');

@@ -40,7 +40,7 @@
 
 <body class="antialiased flex flex-col items-center relative min-h-screen bg-neutral-50">
   <x-navbar />
-
+  <x-flash-message url="/" />
   <main class="flex flex-col py-4 min-w-[1280px] w-[90%]">
     {{-- Heading Zaatani --}}
     <section class="w-full flex min-h-[20rem] items-center ">

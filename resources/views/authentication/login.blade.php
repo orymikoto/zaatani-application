@@ -12,8 +12,8 @@
 </head>
 
 <body class="w-full flex flex-col items-center justify-center relative min-h-screen bg-neutral-200">
-  <x-flash-message />
-  <div class="w-[80%] h-[40rem] rounded-lg shadow-[7px_7px_21px_-14px_rgba(0,0,0,0.4)] bg-white flex">
+  <x-flash-message url="/login" />
+  <div class="w-[80%] h-[40rem] rounded-lg shadow-[7px_7px_21px_-14px_rgba(0,0,0,0.4)] bg-white flex overflow-hidden">
 
     {{-- FORM LOGIN --}}
     <div class=" min-w-[30rem] max-w-[30rem] flex flex-col items-center h-full justify-center">
@@ -32,7 +32,7 @@
             class="flex-1  duration-200 cursor-pointer font-poppins text-center font-medium text-lg py-1 {{ request()->get('role') == 'admin' ? 'text-white bg-amber-400' : 'text-amber-400 hover:text-white  hover:bg-amber-400' }}">Admin</a>
         </div>
       </div>
-      <form action="/login" class="my-4 flex flex-col" method="POST">
+      <form action="/login?role={{ request()->get('role') }}" class="my-4 flex flex-col" method="POST">
         @csrf
 
         <div class="flex flex-col items-start w-[20rem]">

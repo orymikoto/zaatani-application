@@ -13,7 +13,7 @@ class Pengguna extends Authenticatable
   use HasApiTokens, HasFactory, Notifiable;
 
   protected $table = 'pengguna';
-
+  protected $primaryKey = 'id_pengguna';
   // Define the fillable fields
   protected $fillable = [
     'email',

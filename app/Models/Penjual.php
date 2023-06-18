@@ -14,7 +14,7 @@ class Penjual extends Authenticatable
 
 
   protected $table = 'penjual';
-
+  protected $primaryKey = 'id_penjual';
   // Define the fillable fields
   protected $fillable = [
     'email',

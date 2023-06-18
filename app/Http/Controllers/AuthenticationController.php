@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Pengguna;
 use App\Models\Penjual;
-use Auth;
-use Hash;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 
 class AuthenticationController extends Controller
@@ -32,6 +32,7 @@ class AuthenticationController extends Controller
       'email' => 'required',
       'password' => 'required'
     ]);
+    // dd(request()->role);
     if (request()->role == 'admin') {
       if (Auth::guard('admin')->attempt($validation)) {
         return redirect('/');
@@ -46,12 +47,14 @@ class AuthenticationController extends Controller
       return redirect('/login');
     } elseif (request()->role == 'pengguna') {
       if (Auth::guard('pengguna')->attempt($validation)) {
+        // dd(auth('pengguna')->user());
         return redirect('/');
       }
       session()->flash('pesan', 'Username atau password salah');
       return redirect('/login');
     } else {
-      return view('authentication.login')->with('failed', 'Silahkan pilih jenis akun terlebih dahulu');
+      session()->flash('pesan', 'Silahkan pilih role terlebih dahulu');
+      return redirect('/login');
     }
   }
 

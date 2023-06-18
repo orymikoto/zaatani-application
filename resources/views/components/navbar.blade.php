@@ -26,18 +26,28 @@
 
       {{-- @if (auth('login')->check()) --}}
       <div class="flex items-center gap-2">
-        {{-- @if (auth('admin')->check() || auth('penjual')->check() || auth('pengguna')->check())
+        @if (auth('admin')->check() || auth('penjual')->check() || auth('pengguna')->check())
           <div class="flex items-center gap-1 cursor-pointer rounded-md py-1 pl-1 pr-4 hover:bg-white/50 duration-200">
-            <div class="bg-center bg-cover rounded-full w-8 h-8 bg-neutral-300"></div>
-            <p class="text-white font-poppins text-sm">Lintang Semesta</p>
+            <div class="bg-center bg-cover rounded-full w-8 h-8 overflow-hidden">
+              <img
+                src="{{ auth('admin')->check() ? auth('admin')->user()->foto_profil : '' }}
+              {{ auth('pengguna')->check() ? auth('pengguna')->user()->foto_profil : '' }}
+              {{ auth('penjual')->check() ? auth('penjual')->user()->foto_profil : '' }}"
+                class="w-full h-full object-cover object-center" alt="">
+            </div>
+            <p class="text-white font-poppins text-sm">
+              {{ auth('admin')->check() ? auth('admin')->user()->nama : '' }}
+              {{ auth('pengguna')->check() ? auth('pengguna')->user()->nama_lengkap : '' }}
+              {{ auth('penjual')->check() ? auth('penjual')->user()->nama_lengkap : '' }}
+            </p>
           </div>
           <img src="/icons/log-out.svg" class="w-10 h-10 rounded-full hover:bg-white/50 cursor-pointer duration-200 p-2" alt="log out">
-        @else --}}
-        <a href="/login"
-          class="w-[7rem] py-1 rounded-full text-white bg-emerald-500 flex items-center justify-center font-poppins font-medium text-lg hover:text-emerald-500 hover:bg-white hover:shadow-md hover:shadow-emerald-500/75 duration-200 cursor-pointer ">Login</a>
-        <a href="/register"
-          class="w-[7rem] py-1 rounded-full text-white bg-yellow-500 flex items-center justify-center font-poppins font-medium text-lg hover:text-yellow-500 hover:bg-white hover:shadow-md hover:shadow-yellow-500/75 duration-200 cursor-pointer ">Register</a>
-        {{-- @endif --}}
+        @else
+          <a href="/login"
+            class="w-[7rem] py-1 rounded-full text-white bg-emerald-500 flex items-center justify-center font-poppins font-medium text-lg hover:text-emerald-500 hover:bg-white hover:shadow-md hover:shadow-emerald-500/75 duration-200 cursor-pointer ">Login</a>
+          <a href="/register"
+            class="w-[7rem] py-1 rounded-full text-white bg-yellow-500 flex items-center justify-center font-poppins font-medium text-lg hover:text-yellow-500 hover:bg-white hover:shadow-md hover:shadow-yellow-500/75 duration-200 cursor-pointer ">Register</a>
+        @endif
 
       </div>
       {{-- @else --}}
