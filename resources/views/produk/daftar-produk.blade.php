@@ -16,20 +16,11 @@
     const swiper = new Swiper('.swiper', {
       // Optional parameters
       loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-      },
+      slidesPerView: 1,
 
       // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
 
       // And if we need scrollbar
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
     });
   </script>
 </head>
@@ -38,22 +29,30 @@
   <x-navbar />
   <main class="flex flex-col min-w-[1280px] w-[90%]">
     {{--  --}}
+    <h1 class="font-comfortaa my-4 text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-tr to-sky-400 from-pink-600">ZAATANI
+      MART</h1>
     <section class="flex w-full">
-      <div class="swiper mySwiper w-full h-[450px] py-8 px-12 ">
+      <div class="swiper mySwiper w-[1280px] h-[300px] mb-8">
         <div class="swiper-wrapper">
-          <div class="swiper-slide flex bg-sky-700/25 rounded-lg">
-            <div class=""></div>
+          <div class="swiper-slide w-[1280px] overflow-hidden px-2 grid grid-cols-3 gap-4 rounded-lg">
+            <img src="/images/mart/head1.jpg" class=" h-full rounded-md object-cover object-center" alt="">
+            <img src="/images/mart/head2.jpg" class=" h-full rounded-md object-cover object-center" alt="">
+            <img src="/images/mart/head3.jpg" class=" h-full rounded-md object-cover object-center" alt="">
           </div>
-          <div class="swiper-slide flex flex-col bg-sky-700/25 rounded-lg">
-
+          <div class="swiper-slide w-[1280px] overflow-hidden px-2 grid grid-cols-3 gap-4 rounded-lg">
+            <img src="/images/mart/head4.jpg" class=" h-full rounded-md object-cover object-center" alt="">
+            <img src="/images/mart/head5.jpg" class=" h-full rounded-md object-cover object-center" alt="">
+            <img src="/images/mart/head6.jpg" class=" h-full rounded-md object-cover object-center" alt="">
           </div>
-          <div class="swiper-slide flex flex-col bg-sky-700/25 rounded-lg">
-
+          <div class="swiper-slide w-[1280px] overflow-hidden px-2 grid grid-cols-3 gap-4 rounded-lg">
+            <img src="/images/mart/head7.jpg" class=" h-full rounded-md object-cover object-center" alt="">
+            <img src="/images/mart/head8.jpg" class=" h-full rounded-md object-cover object-center" alt="">
+            <img src="/images/mart/head9.jpg" class=" h-full rounded-md object-cover object-center" alt="">
           </div>
         </div>
-        <div class="swiper-button-next"></div>
+        {{-- <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination"></div> --}}
       </div>
     </section>
   </main>
