@@ -1,4 +1,4 @@
-<a href="/mart/detail-produk/{{ $produk->id_produk }}" class="h-full flex-1 rounded-md overflow-hidden bg-white flex flex-col">
+<a href="/mart/detail-produk/{{ $produk->id_produk }}" class="h-full min-h-[20rem] shadow-md flex-1 rounded-md overflow-hidden bg-white flex flex-col">
   <img src="{{ $produk->foto_produk }}" class="w-full object-cover object-center h-[10rem]" alt="">
   <div class="flex flex-col p-4 flex-1 ">
     <p class="text-neutral-700 font-poppins line-clamp-2">{{ $produk->nama }}</p>

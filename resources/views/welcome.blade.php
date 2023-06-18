@@ -47,8 +47,7 @@
       <div class="flex flex-col items-start w-[70%] gap-4">
         <h1 class="font-comfortaa font-bold text-neutral-700 text-4xl"> <span
             class="text-transparent bg-clip-text bg-gradient-to-tr to-sky-500 from-pink-600">
-            Website Zaatani </span> Modernisasi segala
-          proses pertanian guna menyejahterakan kehidupan petani</h1>
+            Website Zaatani </span> Memudahakan Petani Dalam Memenuhi Kebutuhan Pertanian</h1>
         <p class="text-xl font-poppins text-neutral-700">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
           Blanditiis sapiente eveniet
           assumenda reiciendis harum itaque? Expedita, omnis? Quae facilis voluptatum dolores, accusamus odio commodi
@@ -60,7 +59,7 @@
     </section>
 
     <section class="flex w-full justify-center items-center">
-      <a href=""
+      <a href="/mart"
         class="flex items-center gap-4 px-4 w-[32rem] bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-lg h-[8rem] hover:w-[34rem] hover:h-[8.5rem] duration-200 cursor-pointer">
         <img src="/icons/cart.svg" class="w-16 h-16 p-2 rounded-md bg-white  " alt="">
         <div class="flex flex-col flex-1">

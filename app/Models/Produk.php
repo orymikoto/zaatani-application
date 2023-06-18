@@ -31,6 +31,6 @@ class Produk extends Model
 
   public function kategoriProduk()
   {
-    return $this->belongsTo(KategoriProduk::class, 'id_kategori', 'id_kategori_produk');
+    return $this->belongsTo(KategoriProduk::class, 'id_kategori', 'id_kategori');
   }
 }

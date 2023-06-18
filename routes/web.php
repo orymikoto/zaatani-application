@@ -41,7 +41,7 @@ Route::post('/profile/edit', [ProfileController::class, 'profile_edit'])->name('
 
 // MART
 Route::get('/mart', [ProdukController::class, 'mart'])->name('mart');
-Route::get('/mart/kategori/{id_kategori}', [ProdukController::class, 'kategori'])->name('kategori');
+Route::get('/mart/kategori-produk/{id_kategori}', [ProdukController::class, 'kategori'])->name('kategori');
 Route::get('/mart/detail-produk/{id_produk}', [ProdukController::class, 'detail_produk'])->name('produk_detail');
 Route::get('/mart/beli-produk/{id_produk}', [ProdukController::class, 'beli_produk'])->name('beli_produk');
 

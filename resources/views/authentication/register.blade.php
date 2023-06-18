@@ -28,8 +28,8 @@
         </div>
       </div>
     @else
-      <div class=" min-w-[30rem] max-w-[36rem] flex flex-col items-center h-full justify-center">
-        <h2 class="font-carterone text-sky-700 text-3xl">Zaatani Application</h2>
+      <div class=" min-w-[30rem] max-w-[36rem] flex flex-col items-center h-full justify-start overflow-y-scroll no-scrollbar">
+        <h2 class="font-carterone text-sky-700 text-3xl mt-4">Zaatani Application</h2>
         <p class="font-lobster text-xs text-neutral-500 text-center w-[15rem]">Modernisasi segala proses pertanian guna
           menyejahterakan kehidupan petani</p>
         <h1 class="font-bebasneue text-neutral-800 text-3xl my-4">Register Page</h1>
@@ -42,7 +42,7 @@
               class="flex-1  duration-200 cursor-pointer font-poppins text-center font-medium text-lg py-1 {{ request()->get('role') == 'penjual' ? 'text-white bg-teal-600' : 'hover:text-white text-teal-600 hover:bg-teal-600' }}">Penjual</a>
           </div>
         </div>
-        <form action="/login" class="my-4 grid grid-cols-12 gap-2 mx-2" method="POST">
+        <form action="/register" class="my-4 grid grid-cols-12 gap-2 mx-2" method="POST">
           @csrf
           <div class="col-span-6 flex flex-col items-start w-full">
             <p class="text-yellow-500 font-medium mx-2">Email</p>
@@ -60,9 +60,17 @@
             <input type="text" placeholder="Lintang Semesta" name="nama_lengkap" required oninput="this.setCustomValidity('')"
               class="outline-none text-neutral-600 font-medium placeholder:text-neutral-400 border-2 border-neutral-400 focus:text-yellow-500 duration-200 w-full  rounded-md py-1 px-2 focus:border-yellow-500">
           </div>
+          @if (request()->get('role') == 'penjual')
+            <div class="col-span-6 flex flex-col items-start w-full ">
+              <p class="text-yellow-500 font-medium mx-2">Nomor Rekening</p>
+              <input type="text" minlength="10" maxlength="16" placeholder="32xxxxxxx" name="nomor_rekening" required
+                oninput="this.setCustomValidity('')"
+                class="outline-none text-neutral-600 font-medium placeholder:text-neutral-400 border-2 border-neutral-400 focus:text-yellow-500 duration-200 w-full  rounded-md py-1 px-2 focus:border-yellow-500">
+            </div>
+          @endif
           <div class="col-span-6 flex flex-col items-start w-full">
             <p class="text-yellow-500 font-medium mx-2">Nomor Telepon</p>
-            <input type="number" placeholder="08xxxxxxx" name="telephone" required oninput="this.setCustomValidity('')"
+            <input type="text" minlength="9" maxlength="13" placeholder="08xxxxxxx" name="telephone" required oninput="this.setCustomValidity('')"
               class="outline-none text-neutral-600 font-medium placeholder:text-neutral-400 border-2 border-neutral-400 focus:text-yellow-500 duration-200 w-full  rounded-md py-1 px-2 focus:border-yellow-500">
           </div>
           <div class="col-span-6 flex flex-col items-start w-full">
@@ -95,6 +103,11 @@
                 <option value="{{ $value->code }}">{{ $value->name }}</option>
               @endforeach
             </select>
+          </div>
+          <div class="col-span-6 flex flex-col items-start w-full">
+            <p class="text-yellow-500 font-medium mx-2">Alamat</p>
+            <input type="text" placeholder="Perumahan xxx" name="alamat" required oninput="this.setCustomValidity('')"
+              class="outline-none text-neutral-600 font-medium placeholder:text-neutral-400 border-2 border-neutral-400 focus:text-yellow-500 duration-200 w-full  rounded-md py-1 px-2 focus:border-yellow-500">
           </div>
           <div class="col-start-3 col-end-11 flex flex-col items-center">
             <button type="submit"

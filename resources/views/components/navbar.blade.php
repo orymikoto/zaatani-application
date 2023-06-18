@@ -1,5 +1,5 @@
 <nav class="bg-sky-700 z-10 shadow-md w-full">
-  <div class="container mx-auto px-4">
+  <div class="mx-auto container">
     <div class="flex gap-2 items-center justify-between h-16">
       <!-- Logo -->
       <div class="flex-shrink-0">
@@ -26,11 +26,19 @@
 
       {{-- @if (auth('login')->check()) --}}
       <div class="flex items-center gap-2">
-        <div class="flex items-center gap-1 cursor-pointer rounded-md py-1 pl-1 pr-4 hover:bg-white/50 duration-200">
-          <div class="bg-center bg-cover rounded-full w-8 h-8 bg-neutral-300"></div>
-          <p class="text-white font-poppins text-sm">Lintang Semesta</p>
-        </div>
-        <img src="/icons/log-out.svg" class="w-10 h-10 rounded-full hover:bg-white/50 cursor-pointer duration-200 p-2" alt="log out">
+        {{-- @if (auth('admin')->check() || auth('penjual')->check() || auth('pengguna')->check())
+          <div class="flex items-center gap-1 cursor-pointer rounded-md py-1 pl-1 pr-4 hover:bg-white/50 duration-200">
+            <div class="bg-center bg-cover rounded-full w-8 h-8 bg-neutral-300"></div>
+            <p class="text-white font-poppins text-sm">Lintang Semesta</p>
+          </div>
+          <img src="/icons/log-out.svg" class="w-10 h-10 rounded-full hover:bg-white/50 cursor-pointer duration-200 p-2" alt="log out">
+        @else --}}
+        <a href="/login"
+          class="w-[7rem] py-1 rounded-full text-white bg-emerald-500 flex items-center justify-center font-poppins font-medium text-lg hover:text-emerald-500 hover:bg-white hover:shadow-md hover:shadow-emerald-500/75 duration-200 cursor-pointer ">Login</a>
+        <a href="/register"
+          class="w-[7rem] py-1 rounded-full text-white bg-yellow-500 flex items-center justify-center font-poppins font-medium text-lg hover:text-yellow-500 hover:bg-white hover:shadow-md hover:shadow-yellow-500/75 duration-200 cursor-pointer ">Register</a>
+        {{-- @endif --}}
+
       </div>
       {{-- @else --}}
       {{-- <div class=""></div> --}}
