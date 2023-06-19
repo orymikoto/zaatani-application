@@ -435,6 +435,17 @@ class ProdukSeeder extends Seeder
           'id_penjual' => 1,
           'id_kategori' => 7,
         ],
+        [
+          'nama' => 'Turi Putih',
+          'deskripsi' => 'Bunga Turi atau nama ilmiahnya Sesbania grandiflora adalah tanaman yang berasal dari Asia Selatan dan Asia Tenggara, tapi sekarang telah tersebar luas hampir di seluruh wilayah tropis di dunia. Bunga yang dihasilkan tanaman ini bentuknya seperti kupu-kupu dan kuncupnya berbentuk sabit, ada yang merah dan juga putih. Yang ini dapat menghasilkan bunga berwarna putih. Bunganya bisa dimakan dan biasanya dijadikan campuran pecel.
+
+          Tanaman turi tumbuh dengan batang berkayu dan dapat tumbuh hingga 5-12 meter. Beberapa bagian dari tanaman turi bisa dimanfaatkan seperti daun, bunga dan polongnya yang bisa dimakan. Selain itu, turi juga biasanya dijadikan sebagai obat untuk mengobati beberapa jenis penyakit.',
+          'harga' => 25000,
+          'satuan' => ' 20 biji',
+          'foto_produk' => 'public\images\foto_produk\pertanian organik\turi putih.jpg',
+          'id_penjual' => 1,
+          'id_kategori' => 5,
+        ],
     ]);
 
     for ($i = 1; $i <= 200; $i++) {
