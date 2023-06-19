@@ -314,6 +314,54 @@ class ProdukSeeder extends Seeder
           'id_penjual' => 1,
           'id_kategori' => 8,
         ],
+
+
+        [
+          'nama' => 'Asparagus',
+          'deskripsi' => 'Asparagus F1 merupakan jenis tanaman yang dimanfaatkan sebagai sayuran. Tanaman ini termasuk dalam genus Asparagus dengan nama ilmiah Asparagus officinalis. Biasanya dimanfaatkan bagian batang mudanya yang menghasilkan rasa renyah dan lembut. Tanaman premium ini dulunya hanya dinikmati oleh keluarga kerajaan di Mesir kuno.
+
+          Asparagus terbukti sangat baik dalam hal membantu kelancaran urin dan secara otomatis akan membantu menjaga kesehatan ginjal. Selain itu, sangat baik dikonsumsi oleh penderita kolesterol tinggi ataupun tekanan darah tinggi.',
+          'harga' => 50000,
+          'satuan' => ' 30 biji',
+          'foto_produk' => 'public\images\foto_produk\pertanian organik\asparagus.jpg',
+          'id_penjual' => 1,
+          'id_kategori' => 5,
+        ],
+        [
+          'nama' => 'Terong Ungu',
+          'deskripsi' => 'Terong ungu (Solanum melongena) termasuk tanaman terna perennial yang buahnya dapat dikonsumsi sebagai sayuran. Terong ungu berasal dari Asia bagian Selatan dan Asia bagian Timur. Tanaman terong ungu memiliki batang berkayu, bulat, tegak, dan percabangannya simpodial.
+          Kandungan dalam buah terong ungu antara lain kalsium, serat, flavonoid, vitamin, dan mineral. Terong ungu memiliki banyak manfaat bagi kesehatan, yaitu dapat membantu pencernaan, sumber serat yang baik untuk penderita jantung, kolesterol tinggi, dan diabetes. Kalsium yang terkandung dalam terong ungu tinggi, membuatnya menjadi makanan yang dapat memperkuat tulang dan persendian. Selain itu kandungan mineral zat besi yang dimiliki terong ungu mampu mencegah anemia.',
+          'harga' => 50000,
+          'satuan' => ' 30 biji',
+          'foto_produk' => 'public\images\foto_produk\pertanian organik\terong ungu.jpg',
+          'id_penjual' => 1,
+          'id_kategori' => 5,
+        ],
+        [
+          'nama' => 'Jagung Permata',
+          'deskripsi' => 'Benih jagung permata atau dikenal pula dengan nama jagung pelangi, di luar negeri dijuluki sebagai Glass Gem Corn. Jagung ini merupakan salah satu varietas yang terkenal, berasal dari hasil persilangan sehingga menghasilkan biji jagung yang berwarna-warni layaknya pelangi. Permukaan bijinya mengkilap terlihat seperti permata / manik-manik kaca.
+
+          Jagung unik ini ditemukan pertama kali oleh seorang petani bernama Carl Barnes lalu kemudian diproduksi oleh perusahaan benih skala kecil di Arizona. Sangat ideal dibuat popcorn, dikonsumsi langsung setelah direbus ataupun dibuat tepung.',
+          'harga' => 55000,
+          'satuan' => ' 25 biji',
+          'foto_produk' => 'public\images\foto_produk\pertanian organik\jagung permata.jpeg',
+          'id_penjual' => 1,
+          'id_kategori' => 5,
+        ],
+        [
+          'nama' => 'Kenikir',
+          'deskripsi' => 'Tanaman Kenikir, tanaman ini memiliki nama ilmiah Cosmos Caudatus. Tanaman yang dapat tumbuh mencapai tinggi 1 meter ini mempunyai daun yang bertangkai panjang, dan duduk daunnya berhadapan, sehingga terbagi menyirip menjadi 2-3 tangkai. Tumbuhan tahunan yang memiliki batang pipa isi termasuk dalam genus Cosmos dan keluarga Asteraceae. Tanaman ini biasanya tersebar di daerah Amerika Tengah dengan suhu yang panas.
+          Kelebihan tanaman ini adalah:
+
+          Memiliki khasiat yang mampu menyembuhkan penyakit mematikan seperti kanker
+          Dapat mengatasi tidak stabilnya peredaran darah
+          Dapat menguatkan tulang, menambah nafsu makan, menghalangi proses penuaan dini, menghilangkan bau tidak sedap di dalam mulut, dan dapat mengusir keberadaan nyamuk',
+          'harga' => 25000,
+          'satuan' => ' 20 biji',
+          'foto_produk' => 'public\images\foto_produk\pertanian organik\kenikir.jpg',
+          'id_penjual' => 1,
+          'id_kategori' => 5,
+        ],
     ]);
 
     for ($i = 1; $i <= 200; $i++) {
