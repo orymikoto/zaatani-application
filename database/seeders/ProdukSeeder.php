@@ -19,7 +19,7 @@ class ProdukSeeder extends Seeder
     KategoriProduk::insert(
       [
         [
-          'nama_kategori' => 'Benih dan Bibit',
+          'nama_kategori' => 'Benih',
         ],
         [
           'nama_kategori' => 'Beras',
@@ -58,7 +58,7 @@ class ProdukSeeder extends Seeder
         'satuan' => 'Kg',
         'foto_produk' => '/images/foto_produk/1.jpg',
         'id_penjual' => 1,
-        'id_kategori' => 2,
+        'id_kategori' => 1,
       ],
       [
         'nama' => 'Kacang Mede',
@@ -67,7 +67,7 @@ class ProdukSeeder extends Seeder
         'satuan' => 'Kg',
         'foto_produk' => '/images/foto_produk/2.jpg',
         'id_penjual' => 1,
-        'id_kategori' => 3,
+        'id_kategori' => 1,
       ],
       [
         'nama' => 'Ubi Ungu',
@@ -76,7 +76,7 @@ class ProdukSeeder extends Seeder
         'satuan' => 'Kg',
         'foto_produk' => '/images/foto_produk/3.jpg',
         'id_penjual' => 1,
-        'id_kategori' => 3,
+        'id_kategori' => 1,
       ],
     ]);
 
