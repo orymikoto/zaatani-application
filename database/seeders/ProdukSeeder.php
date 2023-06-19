@@ -362,6 +362,17 @@ class ProdukSeeder extends Seeder
           'id_penjual' => 1,
           'id_kategori' => 5,
         ],
+
+
+        [
+          'nama' => 'Insektisida Curacron',
+          'deskripsi' => '',
+          'harga' => 25000,
+          'satuan' => ' 20 biji',
+          'foto_produk' => 'public\images\foto_produk\pupuk dan obat\insektisida curacron.jpg',
+          'id_penjual' => 1,
+          'id_kategori' => 7,
+        ],
     ]);
 
     for ($i = 1; $i <= 200; $i++) {
