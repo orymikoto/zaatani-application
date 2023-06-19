@@ -48,11 +48,11 @@
         <h1 class="font-comfortaa font-bold text-neutral-700 text-4xl"> <span
             class="text-transparent bg-clip-text bg-gradient-to-tr to-sky-500 from-pink-600">
             Website Zaatani </span> Memudahakan Petani Dalam Memenuhi Kebutuhan Pertanian</h1>
-        <p class="text-xl font-poppins text-neutral-700">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Blanditiis sapiente eveniet
-          assumenda reiciendis harum itaque? Expedita, omnis? Quae facilis voluptatum dolores, accusamus odio commodi
-          necessitatibus doloremque
-          repellendus qui recusandae sunt harum perspiciatis possimus atque.</p>
+        <p class="text-xl font-poppins text-neutral-700">Membangun dan memajukan pertanian dengan digitalisasi dan transparansi di setiap prosesnya.
+Menjadi mitra bagi petani dalam mendukung segala proses pertanian
+Menjadi mitra bagi para penjual dan petani guna meningkatkan kinerja rantai pasok di dunia pertanian.
+Berkolaborasi dengan badan usaha pangan guna meningkatkan ketahanan pangan nasional.
+Memberikan dampak sosial yang positif dan membangun bagi pertanian di Indonesia.</p>
       </div>
       <div class="min-w-[30%] min-h-[20rem] bg-[url('/images/harvestmoon.png')] bg-center bg-contain bg-no-repeat">
       </div>
