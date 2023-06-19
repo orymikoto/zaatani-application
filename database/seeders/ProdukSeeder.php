@@ -88,6 +88,63 @@ class ProdukSeeder extends Seeder
         'id_penjual' => 1,
         'id_kategori' => 1,
       ],
+      [
+        'nama' => 'Benih Kacang Panjang',
+        'deskripsi' => 'Kacang Panjang Parade Tavi ialah benih kacang panjang yang ideal ditanam di wilayah dataran rendah – menengah. Cocok pula ditanam secara konvensional, aquaponik, hidroponik, dan organik. Umur panen yakni pada usia 48 – 55 hari semenjak benih ditanam dengan potensi hasil panen yang diperkirakan mencapai 35 ton/ha. Benih ini akan menghasilkan tanaman yang tahan terhadap Fw, Bw, dan MYMIV.',
+        'harga' => 20000,
+        'satuan' => '200 biji',
+        'foto_produk' => 'public\images\foto_produk\benih\benih kacang panjang.jpg',
+        'id_penjual' => 1,
+        'id_kategori' => 1,
+      ],
+      [
+        'nama' => 'Benih Kale Siberian',
+        'deskripsi' => 'Benih Kale Siberian Dwarf kemasan aluminium foil isi 250 biji (impor).
+
+        Kale jenis ini memiliki bentuk daun keriting, berwarna hijau kebiruan dan rasanya sedikit manis. Daun muda ataupun daun yang sudah tua sekalipun benar-benar memiliki rasa yang sangat lezat. Selain itu, daun kale siberian juga lebih lembut dibanding jenis kale keriting lainnya.
+        
+        Pertumbuhan kale siberian tergolong pendek (dwarf). Masa panen daunnya adalah sekitar 50 hari sejak disemai atau bisa juga dipanen muda sekitar 25 hari sejak disemai.',
+        'harga' => 15000,
+        'satuan' => '250 biji',
+        'foto_produk' => 'public\images\foto_produk\benih\benih kale siberian.jpg',
+        'id_penjual' => 1,
+        'id_kategori' => 1,
+      ],
+      [
+        'nama' => 'Benih Oyong',
+        'deskripsi' => 'Benih Oyong Prima adalah sayuran buah yang dikenal juga dengan nama Gambas. Sayuran ini biasanya dibudidayakan pada daerah dataran rendah juga menengah dan akan menghasilkan buah lonjong berukuran 35-45cm. Selain dapat diolah menjadi masakan yang lezat, buah oyong juga dipercaya baik bagi kesehatan kulit seperti melembabkan kulit, mencegah jerawat dan anti penuaan.
+
+        Tanaman oyong termasuk produktif dan dapat dipanen 35-40 HST dengan hasil berkisar 300-350/buah (35-40 ton). Buah oyong berwarna hijau terang hingga hijau gelap dengan kulit yang sedikit kasar, sedangkan dagingnya berwarna putih. Memiliki cita rasa yang lezat, manis dan bertekstur lembut. Oyong prima (Luffa acutangula) merupakan Cucurbitaceae (suku labu-labuan) yang cukup tahan terhadap serangan embun bulu juga bercak mata kodok.',
+        'harga' => 20000,
+        'satuan' => '20 biji',
+        'foto_produk' => 'public\images\foto_produk\benih\benih oyong.jpg',
+        'id_penjual' => 1,
+        'id_kategori' => 1,
+      ],
+      [
+        'nama' => 'Benih Pakcoy',
+        'deskripsi' => 'Benih Pakchoy Ching Chiang ini diproduksi oleh Known You Seed dengan isi per bungkusnya sebanyak 5 gram.
+
+        Pakcoy ini termasuk dalam kategori sayuran sawi dengan kualitas produksi yang cukup tinggi. Berat tanaman ini bisa mencapai 110 gram dengan warna daun hijau tua serta tangkai berwarna hijau. Selain itu, daunnya juga berbentuk lonjong.
+        
+        Pertumbuhan tanaman ini cukup subur serta mempunyai ketahanan yang kuat terhadap iklim panas dan lembab sehingga cocok ditanam di dataran rendah. Untuk ketentuan masa panennya adalah sekitar 45 hari sejak ditanam.',
+        'harga' => 25000,
+        'satuan' => '50 biji',
+        'foto_produk' => 'public\images\foto_produk\benih\benih pakcoy.jpg',
+        'id_penjual' => 1,
+        'id_kategori' => 1,
+      ],
+      [
+        'nama' => 'Benih Paprika Merah',
+        'deskripsi' => 'Paprika Merah Red Star merupakan jenis paprika yang menghasilkan buah berbentuk persegi dengan dimensi buah yakni rata-rata 9,8 x 7,3 cm dan bobotnya bisa mencapai sekitar 170-190 gr/buah.
+
+        Pada saat paprika merah ini masih muda, kulit buahnya berwarna hijau segar dan perlahan berubah menjadi merah cerah ketika buah sudah matang. Dagingnya tebal dan daya tahan yang baik pada saat pengangkutan.',
+        'harga' => 20000,
+        'satuan' => '25 biji',
+        'foto_produk' => 'public\images\foto_produk\benih\benih paprika merah red star.jpg',
+        'id_penjual' => 1,
+        'id_kategori' => 1,
+      ]
     ]);
 
     for ($i = 1; $i <= 200; $i++) {
