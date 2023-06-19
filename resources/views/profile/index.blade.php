@@ -29,7 +29,8 @@
       @csrf
       <div class="mx-auto w-64 text-center col-span-full ">
         <div class="relative w-64 h-64">
-          <img class="w-64 h-64 rounded-full object-cover object-center absolute" src="{{ $detailUser->foto_profil }}" alt="" />
+          <img class="w-64 h-64 rounded-full object-cover object-center absolute"
+            src="{{ !empty($detailUser->foto_profil) ? $detailUser->foto_profil : '/images/foto_profil/pengguna1.jpg' }}" alt="" />
         </div>
       </div>
       @if (request()->get('edit') == 'true')

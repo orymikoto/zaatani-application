@@ -69,8 +69,8 @@ class AuthenticationController extends Controller
     if (request()->role == 'penjual') {
       $check = Penjual::whereEmail($request->email)->first();
       if (!empty($check)) {
-        session()->flash('gagal', 'Email telah digunakan, silakan masukkan email lain atau login dengan akun yang sudah ada');
-        return view('auth.register');
+        session()->flash('pesan', 'Email telah digunakan, silakan masukkan email lain atau login dengan akun yang sudah ada');
+        return redirect('/register');
       }
       $users = Penjual::create([
         'nama_lengkap' => $request->nama_lengkap,
@@ -86,12 +86,12 @@ class AuthenticationController extends Controller
       ]);
 
       session()->flash('pesan', 'Register berhasil dilakukan silahkan login!');
-      return view('auth.login');
-    } elseif (request()->role == 'pengusaha') {
+      return redirect('/login');
+    } elseif (request()->role == 'pengguna') {
       $check = Pengguna::whereEmail($request->email)->first();
       if (!empty($check)) {
-        session()->flash('gagal', 'Email telah digunakan, silakan masukkan email lain atau login dengan akun yang sudah ada');
-        return view('auth.register');
+        session()->flash('pesan', 'Email telah digunakan, silakan masukkan email lain atau login dengan akun yang sudah ada');
+        return redirect('/register');
       }
 
       $users = Penjual::create([
@@ -105,9 +105,11 @@ class AuthenticationController extends Controller
         'kota' => $request['kota'],
         'provinsi' => $request['provinsi'],
       ]);
-      return view('auth.login')->with('registered', 'Register berhasil dilakukan silahkan login!');
+      session()->flash('pesan', 'Berhasil');
+      return redirect('/login');
     } else {
-      return view('auth.register')->with('failed', 'Silahkan pilih jenis akun terlebih dahulu');
+      session()->flash('pesan', 'Silahkan Pilih Role');
+      return redirect('/register');
     }
   }
 

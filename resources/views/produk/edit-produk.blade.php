@@ -14,6 +14,8 @@
 <body class="antialiased flex flex-col items-center relative min-h-screen justify-between bg-neutral-100">
   <x-navbar />
   <x-flash-message url="/penjual/tambah-produk" />
+  {{-- {{ $produk }} --}}
+
   <div class="container mx-auto">
     <h1 class="text-3xl font-righteous mb-4 text-center">Edit Produk</h1>
     <form action="/penjual/tambah-produk" class="flex flex-col w-[40rem] mx-auto" method="POST" enctype="multipart/form-data">

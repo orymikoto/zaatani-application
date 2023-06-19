@@ -49,7 +49,7 @@ Route::get('/mart/beli-produk/{id_produk}', [ProdukController::class, 'beli_prod
 // PRODUK PENJUAL
 Route::get('/penjual/daftar-produk/{id_penjual}', [ProdukController::class, 'penjual'])->name('produk_penjual')->middleware('penjual');
 Route::get('/penjual/tambah-produk', [ProdukController::class, 'tambah_produk'])->name('tambah_produk_penjual')->middleware('penjual');
-Route::get('/penjual/edit-produk/{id_produk}', [ProdukController::class, 'tambah_produk'])->name('edit_produk_penjual')->middleware('penjual');
+Route::get('/penjual/edit-produk/{id_produk}', [ProdukController::class, 'edit_produk'])->name('edit_produk_penjual')->middleware('penjual');
 Route::post('/penjual/tambah-produk', [ProdukController::class, 'tambah_produk_post'])->name('tambah_produk_penjual_post')->middleware('penjual');
 Route::post('/penjual/edit-produk/{id_produk}', [ProdukController::class, 'edit_produk_post'])->name('edit_produk_penjual_post')->middleware('penjual');
 Route::get('/penjual/hapus-produk/{id_produk}', [ProdukController::class, 'hapus_produk'])->name('hapus_produk_penjual')->middleware('penjual');
