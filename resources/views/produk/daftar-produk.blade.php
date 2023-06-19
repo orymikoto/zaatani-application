@@ -205,6 +205,40 @@
 
     {{-- SECTION KATEGORI PERTANIAN ORGANIK --}}
     <section class="flex flex-col w-full gap-4 my-4">
+      <h2 class="font-roboto font-medium text-3xl text-neutral-700">Aneka Pupuk</h2>
+      <div class="w-full rounded-lg h-[25rem] bg-sky-700 flex gap-x-8 p-4">
+        <div class="rounded-lg overflow-hidden w-[18rem] bg-[url('/images/bg-kategori.jpg')] bg-cover bg-center py-4 flex flex-col items-center">
+          <div class="bg-gradient-to-r from-sky-900/50 to-sky-900/0 h-16 w-[15rem] pl-4 flex items-center self-start">
+            <p class=" text-white font-poppins font-semibold text-2xl">Aneka Pilihan <br /> <span
+                class="text-pink-700 font-poppins font-semibold text-2xl">Pupuk</span> </p>
+          </div>
+          <div class="flex-1 flex items-center justify-center">
+            <img src="/images/kategori/pupuk.png" class=" w-[10rem] object-cover object-center " alt="">
+          </div>
+          <a
+            class="w-[16rem] rounded-md text-center h-12 flex items-center justify-center text-white duration-200 text-lg font-roboto bg-sky-700 hover:bg-sky-400 cursor-pointer">
+            Cek sekarang juga
+          </a>
+        </div>
+        <div class="rounded-lg flex-1 overflow-hidden flex gap-x-4 justify-evenly">
+          @php
+            $number_row = 0;
+          @endphp
+          @foreach ($produk as $key => $value)
+            @if ($value->id_kategori == 5 && $number_row <= 3)
+              <x-cart-produk :produk="$value" />
+              @php
+                $number_row += 1;
+              @endphp
+            @endif
+          @endforeach
+        </div>
+      </div>
+      <hr class=" bg-neutral-400 h-[1px] my-4">
+    </section>
+
+    {{-- SECTION KATEGORI MESIN DAN ALAT --}}
+    <section class="flex flex-col w-full gap-4 my-4">
       <h2 class="font-roboto font-medium text-3xl text-neutral-700">Mesin dan Alat Pertnian</h2>
       <div class="w-full rounded-lg h-[25rem] bg-sky-700 flex gap-x-8 p-4">
         <div class="rounded-lg overflow-hidden w-[18rem] bg-[url('/images/bg-kategori.jpg')] bg-cover bg-center py-4 flex flex-col items-center">
@@ -213,7 +247,7 @@
                 class="text-pink-700 font-poppins font-semibold text-2xl">Pertanian</span> </p>
           </div>
           <div class="flex-1 flex items-center justify-center">
-            <img src="/images/kategori/organik.png" class=" w-[15rem] object-cover object-center " alt="">
+            <img src="/images/kategori/mesin.png" class=" w-[10rem] object-cover object-center " alt="">
           </div>
           <a
             class="w-[16rem] rounded-md text-center h-12 flex items-center justify-center text-white duration-200 text-lg font-roboto bg-sky-700 hover:bg-sky-400 cursor-pointer">
