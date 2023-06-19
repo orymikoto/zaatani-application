@@ -23,11 +23,16 @@
           </li>
         </ul>
       </div>
+      @if (auth('penjual')->check())
+        <a href="/penjual/daftar-produk/{{ auth('penjual')->id() }}"
+          class="bg-rose-600 rounded-full text-center text-white font-poppins hover:text-red-500 hover:bg-white duration-200 py-1 px-2">Lapak
+          Penjual</a>
+      @endif
 
       {{-- @if (auth('login')->check()) --}}
       <div class="flex items-center gap-2">
         @if (auth('admin')->check() || auth('penjual')->check() || auth('pengguna')->check())
-          <div class="flex items-center gap-1 cursor-pointer rounded-md py-1 pl-1 pr-4 hover:bg-white/50 duration-200">
+          <a href="/profile" class="flex items-center gap-1 cursor-pointer rounded-md py-1 pl-1 pr-4 hover:bg-white/50 duration-200">
             <div class="bg-center bg-cover rounded-full w-8 h-8 overflow-hidden">
               <img
                 src="{{ auth('admin')->check() ? auth('admin')->user()->foto_profil : '' }}
@@ -40,8 +45,10 @@
               {{ auth('pengguna')->check() ? auth('pengguna')->user()->nama_lengkap : '' }}
               {{ auth('penjual')->check() ? auth('penjual')->user()->nama_lengkap : '' }}
             </p>
-          </div>
-          <img src="/icons/log-out.svg" class="w-10 h-10 rounded-full hover:bg-white/50 cursor-pointer duration-200 p-2" alt="log out">
+          </a>
+          <a href="/logout">
+            <img src="/icons/log-out.svg" class="w-10 h-10 rounded-full hover:bg-white/50 cursor-pointer duration-200 p-2" alt="log out">
+          </a>
         @else
           <a href="/login"
             class="w-[7rem] py-1 rounded-full text-white bg-emerald-500 flex items-center justify-center font-poppins font-medium text-lg hover:text-emerald-500 hover:bg-white hover:shadow-md hover:shadow-emerald-500/75 duration-200 cursor-pointer ">Login</a>

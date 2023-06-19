@@ -72,19 +72,17 @@ class AuthenticationController extends Controller
         session()->flash('gagal', 'Email telah digunakan, silakan masukkan email lain atau login dengan akun yang sudah ada');
         return view('auth.register');
       }
-
       $users = Penjual::create([
-        'nama' => $request->nama,
-        'username' => $request->username,
+        'nama_lengkap' => $request->nama_lengkap,
         'email' => $request->email,
+        'tanggal_lahir' => $request->tanggal_lahir,
+        'jenis_kelamin' => $request->jenis_kelamin,
         'password' => Hash::make($request->password),
-        'no_ktp' => $request['no_ktp'],
-        'no_hp' => $request['no_hp'],
-        'alamat_rumah' => $request['alamat_rumah'],
-        'kecamatan' => $request['kecamatan'],
+        'nomor_telepon' => $request['nomor_telepon'],
+        'nomor_rekening' => $request['nomor_rekening'],
+        'alamat' => $request['alamat'],
         'kota' => $request['kota'],
-        'no_rekening' => $request['no_rekening'],
-        'id_bank' => $request['id_bank']
+        'provinsi' => $request['provinsi'],
       ]);
 
       session()->flash('pesan', 'Register berhasil dilakukan silahkan login!');
@@ -96,18 +94,16 @@ class AuthenticationController extends Controller
         return view('auth.register');
       }
 
-      $users = Pengguna::create([
-        'nama' => $request->nama,
-        'username' => $request->username,
+      $users = Penjual::create([
+        'nama_lengkap' => $request->nama_lengkap,
         'email' => $request->email,
+        'tanggal_lahir' => $request->tanggal_lahir,
+        'jenis_kelamin' => $request->jenis_kelamin,
         'password' => Hash::make($request->password),
-        'no_ktp' => $request['no_ktp'],
-        'no_hp' => $request['no_hp'],
-        'alamat_rumah' => $request['alamat_rumah'],
-        'kecamatan' => $request['kecamatan'],
+        'nomor_telepon' => $request['nomor_telepon'],
+        'alamat' => $request['alamat'],
         'kota' => $request['kota'],
-        'no_rekening' => $request['no_rekening'],
-        'id_bank' => $request['id_bank']
+        'provinsi' => $request['provinsi'],
       ]);
       return view('auth.login')->with('registered', 'Register berhasil dilakukan silahkan login!');
     } else {
@@ -120,16 +116,16 @@ class AuthenticationController extends Controller
   public function logout()
   {
     if (auth('admin')->check()) {
-      session()->flash('logout', 'Pengguna telah keluar, silahkan login kembali untuk mengakses fitur lengkap aplikasi Vestry');
+      session()->flash('pesan', 'Pengguna telah keluar, silahkan login kembali untuk mengakses fitur lengkap aplikasi Vestry');
       auth('admin')->logout();
       return redirect('/');
-    } elseif (auth('pendana')->check()) {
-      session()->flash('logout', 'Pengguna telah keluar, silahkan login kembali untuk mengakses fitur lengkap aplikasi Vestry');
-      auth('pendana')->logout();
+    } elseif (auth('penjual')->check()) {
+      session()->flash('pesan', 'Pengguna telah keluar, silahkan login kembali untuk mengakses fitur lengkap aplikasi Vestry');
+      auth('penjual')->logout();
       return redirect('/');
-    } elseif (auth('pengusaha')->check()) {
-      session()->flash('logout', 'Pengguna telah keluar, silahkan login kembali untuk mengakses fitur lengkap aplikasi Vestry');
-      auth('pengusaha')->logout();
+    } elseif (auth('pengguna')->check()) {
+      session()->flash('pesan', 'Pengguna telah keluar, silahkan login kembali untuk mengakses fitur lengkap aplikasi Vestry');
+      auth('pengguna')->logout();
       return redirect('/');
     }
   }

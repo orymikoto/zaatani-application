@@ -14,8 +14,8 @@
   <x-navbar />
   <main class="flex min-w-[1280px] w-[90%] gap-8">
     {{-- SECTION FILTER --}}
-    <section class=" rounded-md shadow-md my-8 flex flex-col items-center justify-center w-[15rem] h-[20rem]">
-      <form action="/mart/kategori-produk/{{ request()->id_kategori }}" method="GET" class="flex flex-col h-[15rem] bg-white gap-4 p-2 ">
+    <section class=" rounded-md shadow-md my-8 w-[15rem] h-[20rem] flex flex-col items-center justify-center">
+      <form action="/mart/kategori-produk/{{ request()->id_kategori }}" method="GET" class="flex flex-col bg-white  h-[15rem] gap-4 p-2 w-full ">
         @csrf
         <div class="col-span-6 flex flex-col items-start w-full">
           <p class="text-sky-700 font-medium mx-2">Harga Tertinggi</p>
@@ -36,7 +36,9 @@
           <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded">Terapkan</button>
         </div>
       </form>
-
+      <a href="/penjual/tambah-produk"
+        class="text-center font-poppins py-1 text-white text-lg rounded-full px-4 bg-emerald-500 hover:text-emerald-500 hover:bg-white duration-200">Tambah
+        Produk</a>
     </section>
 
     <section class="flex-1 my-8">
