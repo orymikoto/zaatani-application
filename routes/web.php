@@ -33,25 +33,26 @@ Route::get('/login', [AuthenticationController::class, 'login'])->name('login');
 Route::get('/register', [AuthenticationController::class, 'register'])->name('register');
 Route::post('/login', [AuthenticationController::class, 'login_post'])->name('login_post');
 Route::post('/register', [AuthenticationController::class, 'register_post'])->name('register_post');
+Route::get('/logout', [AuthenticationController::class, 'logout'])->name('logout')->middleware('signed');
 
 // PROFILE 
-Route::get('/profile', [ProfileController::class, 'profile'])->name('profile');
-Route::get('/profile/edit', [ProfileController::class, 'profile_edit'])->name('profile_edit');
-Route::post('/profile/edit', [ProfileController::class, 'profile_edit'])->name('profile_edit');
+Route::get('/profile', [ProfileController::class, 'profile'])->name('profile')->middleware('signed');
+Route::get('/profile/edit', [ProfileController::class, 'profile_edit'])->name('profile_edit')->middleware('signed');
+Route::post('/profile/edit', [ProfileController::class, 'profile_edit_post'])->name('profile_edit')->middleware('signed');
 
 // MART
 Route::get('/mart', [ProdukController::class, 'mart'])->name('mart');
 Route::get('/mart/kategori-produk/{id_kategori}', [ProdukController::class, 'kategori'])->name('kategori');
 Route::get('/mart/detail-produk/{id_produk}', [ProdukController::class, 'detail_produk'])->name('produk_detail');
-Route::get('/mart/beli-produk/{id_produk}', [ProdukController::class, 'beli_produk'])->name('beli_produk');
+Route::get('/mart/beli-produk/{id_produk}', [ProdukController::class, 'beli_produk'])->name('beli_produk')->middleware('pengguna');
 
 // PRODUK PENJUAL
-Route::get('/penjual/daftar-produk/{id_penjual}', [ProdukController::class, 'penjual'])->name('produk_penjual');
-Route::get('/penjual/tambah-produk', [ProdukController::class, 'tambah_produk'])->name('tambah_produk_penjual');
-Route::get('/penjual/edit-produk/{id_produk}', [ProdukController::class, 'tambah_produk'])->name('edit_produk_penjual');
-Route::post('/penjual/tambah-produk', [ProdukController::class, 'tambah_produk_post'])->name('tambah_produk_penjual_post');
-Route::post('/penjual/edit-produk/{id_produk}', [ProdukController::class, 'edit_produk_post'])->name('edit_produk_penjual_post');
-Route::get('/penjual/hapus-produk/{id_produk}', [ProdukController::class, 'hapus_produk'])->name('hapus_produk_penjual');
+Route::get('/penjual/daftar-produk/{id_penjual}', [ProdukController::class, 'penjual'])->name('produk_penjual')->middleware('penjual');
+Route::get('/penjual/tambah-produk', [ProdukController::class, 'tambah_produk'])->name('tambah_produk_penjual')->middleware('penjual');
+Route::get('/penjual/edit-produk/{id_produk}', [ProdukController::class, 'tambah_produk'])->name('edit_produk_penjual')->middleware('penjual');
+Route::post('/penjual/tambah-produk', [ProdukController::class, 'tambah_produk_post'])->name('tambah_produk_penjual_post')->middleware('penjual');
+Route::post('/penjual/edit-produk/{id_produk}', [ProdukController::class, 'edit_produk_post'])->name('edit_produk_penjual_post')->middleware('penjual');
+Route::get('/penjual/hapus-produk/{id_produk}', [ProdukController::class, 'hapus_produk'])->name('hapus_produk_penjual')->middleware('penjual');
 
 // TRANSAKSI
 Route::get('/daftar-transaksi/{id_pengguna}', [TransaksiController::class, 'daftar_transaksi'])->name('daftar_transaksi');

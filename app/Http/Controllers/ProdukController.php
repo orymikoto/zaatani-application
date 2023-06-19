@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\KategoriProduk;
 use App\Models\Produk;
 use Illuminate\Http\Request;
 
@@ -52,7 +53,8 @@ class   ProdukController extends Controller
 
   public function tambah_produk()
   {
-    return view('produk.tambah-produk');
+    $kategori = KategoriProduk::all();
+    return view('produk.tambah-produk')->with(array('kategori' => $kategori));
   }
 
   public function edit_produk($id_produk)
@@ -65,8 +67,51 @@ class   ProdukController extends Controller
   public function tambah_produk_post(Request $request)
   {
     try {
+      if ($request->hasFile('foto_produk')) {
+        $file = $request->file('foto_produk');
+        $filename = $file->getClientOriginalName();
+        $filetype = $file->extension();
+        $file->storeAs('upload/foto_produk', $filename . '.' . $filetype, 'public');
+      }
+
+      $produk = new Produk();
+      $produk->nama = $request['nama'];
+      $produk->deskripsi = $request['deskripsi'];
+      $produk->harga = $request['harga'];
+      $produk->satuan = $request['satuan'];
+      $produk->foto_produk = '/storage/upload/foto_produk/' . $filename . '.' . $filetype;
+      $produk->id_penjual = auth('penjual')->id();
+      $produk->id_kategori = $request['id_kategori'];
+      $produk->save();
+
+      session()->flash('pesan', 'Data Pendana Berhasil Diperbarui');
+      return redirect('/penjual/tambah-produk');
     } catch (\Throwable $th) {
       throw $th;
     }
+  }
+
+  public function penjual(Request $request, $id_penjual)
+  {
+    $produk = Produk::whereIdPenjual($id_penjual);
+
+    if ($request->has('harga')) {
+      $produk->where('harga', '<=', $request->harga);
+    }
+    if ($request->has('sort')) {
+      if ($request->sort == 'price_asc') {
+        $produk->orderBy('harga', 'ASC');
+      } elseif ($request->sort == 'price_desc') {
+        $produk->orderBy('harga', 'DESC');
+      } elseif ($request->sort == 'new') {
+        $produk->orderBy('created_at', 'DESC');
+      } elseif ($request->sort == 'old') {
+        $produk->orderBy('created_at', 'ASC');
+      }
+    }
+    $total_data = count($produk->get());
+    $produk_kategori = $produk->paginate(24);
+    return view('produk.produk-penjual')->with(array('produk' => $produk_kategori, 'total_data' => $total_data));
+    // return view('produk.produk-penjual')->with(array('produk' => $produk));
   }
 }
