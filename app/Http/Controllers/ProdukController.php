@@ -57,10 +57,18 @@ class   ProdukController extends Controller
     return view('produk.tambah-produk')->with(array('kategori' => $kategori));
   }
 
+  // public function edit_produk($id_produk)
+  // {
+  //   $produk_detail = Produk::whereIdProduk($id_produk)->first();
+  //   return view('produk.edit-produk')->with(array('produk' => $produk_detail));
+  // }
+
   public function edit_produk($id_produk)
   {
-    $produk_detail = Produk::whereIdProduk($id_produk)->first();
-    return view('produk.edit-produk')->with(array('produk' => $produk_detail));
+    $produk = Produk::whereIdProduk($id_produk)->with('penjual', 'kategoriProduk')->first();
+    $kategori = KategoriProduk::all();
+
+    return view('produk.edit-produk')->with(array('produk' => $produk, 'kategori' => $kategori));
   }
 
   // ACTION METHOD
