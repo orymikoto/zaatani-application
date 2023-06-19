@@ -18,7 +18,7 @@ return new class extends Migration
       $table->string('nama_lengkap');
       $table->string('nomor_telepon');
       $table->string('nomor_rekening');
-      $table->enum('jenis_kelamin', ['Laki-laki', 'Perempuan']);
+      $table->string('jenis_kelamin');
       $table->date('tanggal_lahir');
       $table->string('provinsi');
       $table->string('kota');

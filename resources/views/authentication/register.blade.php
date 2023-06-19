@@ -70,7 +70,8 @@
           @endif
           <div class="col-span-6 flex flex-col items-start w-full">
             <p class="text-yellow-500 font-medium mx-2">Nomor Telepon</p>
-            <input type="text" minlength="9" maxlength="13" placeholder="08xxxxxxx" name="telephone" required oninput="this.setCustomValidity('')"
+            <input type="text" minlength="9" maxlength="13" placeholder="08xxxxxxx" name="nomor_telepon" required
+              oninput="this.setCustomValidity('')"
               class="outline-none text-neutral-600 font-medium placeholder:text-neutral-400 border-2 border-neutral-400 focus:text-yellow-500 duration-200 w-full  rounded-md py-1 px-2 focus:border-yellow-500">
           </div>
           <div class="col-span-6 flex flex-col items-start w-full">
@@ -83,12 +84,12 @@
           </div>
           <div class="col-span-6 flex flex-col items-start w-full">
             <p class="text-yellow-500 font-medium mx-2">Tanggal Lahir</p>
-            <input type="date" placeholder="2001-01-01" name="tanggal" required oninput="this.setCustomValidity('')"
+            <input type="date" placeholder="2001-01-01" name="tanggal_lahir" required oninput="this.setCustomValidity('')"
               class="outline-none text-neutral-600 font-medium placeholder:text-neutral-400 border-2 border-neutral-400 focus:text-yellow-500 duration-200 w-full  rounded-md py-1 px-2 focus:border-yellow-500">
           </div>
           <div class="col-span-6 flex flex-col items-start w-full">
             <p class="text-yellow-500 font-medium mx-2">Province</p>
-            <select placeholder="Jenis Kelamin" name="jenis_kelamin" required oninput="this.setCustomValidity('')"
+            <select placeholder="Jenis Kelamin" name="provinsi" required oninput="this.setCustomValidity('')"
               class="outline-none w-full text-neutral-600 focus:ring-0 border-2 border-neutral-400 px-2 py-[0.375rem] text-lg rounded-md  focus:text-yellow-500 focus:border-yellow-500 duration-200 ">
               @foreach ($province as $key => $value)
                 <option value="{{ $value->code }}">{{ $value->name }}</option>
@@ -97,7 +98,7 @@
           </div>
           <div class="col-span-6 flex flex-col items-start w-full">
             <p class="text-yellow-500 font-medium mx-2">Kota</p>
-            <select placeholder="Jenis Kelamin" name="jenis_kelamin" required oninput="this.setCustomValidity('')"
+            <select placeholder="Jenis Kelamin" name="kota" required oninput="this.setCustomValidity('')"
               class="outline-none w-full text-neutral-600 focus:ring-0 border-2 border-neutral-400 px-2 py-[0.375rem] text-lg rounded-md  focus:text-yellow-500 focus:border-yellow-500 duration-200 ">
               @foreach ($city as $key => $value)
                 <option value="{{ $value->code }}">{{ $value->name }}</option>

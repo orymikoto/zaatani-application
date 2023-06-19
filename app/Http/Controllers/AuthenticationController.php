@@ -61,9 +61,8 @@ class AuthenticationController extends Controller
   public function register_post(Request $request)
   {
     $validation = $request->validate([
-      'nama' => 'required',
+      'nama_lengkap' => 'required',
       'email' => 'required',
-      'username' => 'required',
       'password' => 'required'
     ]);
     if (request()->role == 'penjual') {
@@ -94,7 +93,7 @@ class AuthenticationController extends Controller
         return redirect('/register');
       }
 
-      $users = Penjual::create([
+      $users = Pengguna::create([
         'nama_lengkap' => $request->nama_lengkap,
         'email' => $request->email,
         'tanggal_lahir' => $request->tanggal_lahir,
