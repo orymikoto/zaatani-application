@@ -366,7 +366,17 @@ class ProdukSeeder extends Seeder
 
         [
           'nama' => 'Insektisida Curacron',
-          'deskripsi' => '',
+          'deskripsi' => 'Insektisida Curacron 500EC – 100 ml
+
+          Curacron 500EC merupakan insektisida yang mengandung bahan kimia beracun yang dapat membasmi segala jenis hama serangga tanaman dengan kontak dan lambung. Dengan demikian insektisida ini sangat efisien dan efektif digunakan. Dengan cepat dapat mematikan serangga. Curacron berbentuk cairan kuning kecoklatan pekat yang dikemas dalam botol 100 ml dan memiliki bahan aktif Profenofos 500 g/l.
+          
+          Keunggulan pemakaiannya yaitu :
+          
+          – Mengendalikan berbagai hama pada tanaman cabe, bawang merah, jeruk, tomat, kapas, kentang, kacang hijau, tebu, kubis semangka, tembakau, dan lain-lain
+          
+          – Mengendalikan hama serangga ulat grayak, kutu daun, kutu putih, lalat buah, belalang, ulat papillo, dan hama thrips.
+          
+          Curacron 500EC mengadung bahan kimia beracun, dalam penggunaannya harus dilakukan secara hati-hati. Baca dengan seksama aturan pakai dan cara penggunaan yang terdapat pada kemasan.',
           'harga' => 25000,
           'satuan' => ' 20 biji',
           'foto_produk' => 'public\images\foto_produk\pupuk dan obat\insektisida curacron.jpg',
