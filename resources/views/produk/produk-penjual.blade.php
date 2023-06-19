@@ -45,7 +45,7 @@
       <p class="font-poppins mb-4 text-neutral-400">{{ $total_data }} produk ditemukan</p>
       <div class="grid xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-2 gap-4 w-full">
         @foreach ($produk as $key => $value)
-          <x-cart-produk :produk="$value" />
+          <x-cart-produk-penjual :produk="$value" />
         @endforeach
       </div>
       <div class="mt-4">
