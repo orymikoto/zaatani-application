@@ -49,22 +49,31 @@
             class="text-transparent bg-clip-text bg-gradient-to-tr to-sky-500 from-pink-600">
             Website Zaatani </span> Memudahakan Petani Dalam Memenuhi Kebutuhan Pertanian</h1>
         <p class="text-xl font-poppins text-neutral-700">Membangun dan memajukan pertanian dengan digitalisasi dan transparansi di setiap prosesnya.
-Menjadi mitra bagi petani dalam mendukung segala proses pertanian
-Menjadi mitra bagi para penjual dan petani guna meningkatkan kinerja rantai pasok di dunia pertanian.
-Berkolaborasi dengan badan usaha pangan guna meningkatkan ketahanan pangan nasional.
-Memberikan dampak sosial yang positif dan membangun bagi pertanian di Indonesia.</p>
+          Menjadi mitra bagi petani dalam mendukung segala proses pertanian
+          Menjadi mitra bagi para penjual dan petani guna meningkatkan kinerja rantai pasok di dunia pertanian.
+          Berkolaborasi dengan badan usaha pangan guna meningkatkan ketahanan pangan nasional.
+          Memberikan dampak sosial yang positif dan membangun bagi pertanian di Indonesia.</p>
       </div>
       <div class="min-w-[30%] min-h-[20rem] bg-[url('/images/harvestmoon.png')] bg-center bg-contain bg-no-repeat">
       </div>
     </section>
 
-    <section class="flex w-full justify-center items-center">
+    <section class="flex w-full justify-center items-center gap-4 my-4">
       <a href="/mart"
-        class="flex items-center gap-4 px-4 w-[32rem] bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-lg h-[8rem] hover:w-[34rem] hover:h-[8.5rem] duration-200 cursor-pointer">
+        class="flex items-center gap-4 px-4 w-[32rem] bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-lg h-[8rem] hover:shadow-md hover:shadow-emerald-400/75 duration-200 cursor-pointer">
         <img src="/icons/cart.svg" class="w-16 h-16 p-2 rounded-md bg-white  " alt="">
         <div class="flex flex-col flex-1">
           <p class="text-white font-poppins font-medium text-xl">Zaatani Mart</p>
           <p class="text-white font-poppins ">Mari Mulai Belanja!</p>
+        </div>
+        <img src="/icons/right-arrow.svg" class="w-12 h-12" alt="">
+      </a>
+      <a href="/pelatihan"
+        class="flex items-center gap-4 px-4 w-[32rem] bg-gradient-to-br from-sky-400 to-sky-600 rounded-lg h-[8rem] hover:shadow-md hover:shadow-sky-400/75 duration-200 cursor-pointer">
+        <img src="/icons/class.svg" class="w-16 h-16 p-2 rounded-md bg-white  " alt="">
+        <div class="flex flex-col flex-1">
+          <p class="text-white font-poppins font-medium text-xl">Zaatani Class</p>
+          <p class="text-white font-poppins ">Mari Belajar Modern dalam Bertani!</p>
         </div>
         <img src="/icons/right-arrow.svg" class="w-12 h-12" alt="">
       </a>
@@ -149,7 +158,6 @@ Memberikan dampak sosial yang positif dan membangun bagi pertanian di Indonesia.
                     elit.
                     Mollitia
                     libero quae molestiae sapiente rem. Maiores perspiciatis quas vero rerum non!</p>
-
                 </div>
                 <p class="font-poppins font-semibold text-neutral-800 text-xl mt-8">LINTANG SEMESTA</p>
                 <p class="font-poppins font-semibold text-neutral-400 text-lg">SINAR GALAXY MILKYWAY</p>
