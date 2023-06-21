@@ -38,7 +38,7 @@
             <h2 class="text-sm title-font text-gray-500 tracking-widest">{{ $produk->penjual->nama_lengkap }}</h2>
             <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">{{ $produk->nama }}</h1>
             <div class="flex mb-4 items-center">
-              <p class="text-neutral-600 font-poppins text-lg">{{ $produk->penjual->kota }}</p>
+              <p class="text-neutral-600 font-poppins text-lg">{{ $produk->name }}</p>
               <span class="flex ml-3 pl-3 py-2 border-l-2 border-gray-200">
                 <a class="text-gray-500">
                   <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
@@ -101,7 +101,7 @@
       <h2 class="font-poppins font-medium text-3xl">Produk Terkait</h2>
       <div class="grid gap-4 xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
         @foreach ($recommend_produk as $key => $value)
-          <x-cart-produk :produk="$value" />
+          <x-cart-produk :produk="$value" :city="$value->name" />
         @endforeach
       </div>
     </section>

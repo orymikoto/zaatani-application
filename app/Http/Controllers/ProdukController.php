@@ -3,21 +3,24 @@
 namespace App\Http\Controllers;
 
 use App\Models\KategoriProduk;
+use App\Models\Penjual;
 use App\Models\Produk;
 use Illuminate\Http\Request;
+use Indonesia;
 
 class   ProdukController extends Controller
 {
   // VIEW METHOD
   public function mart()
   {
-    $produk = Produk::with('penjual', 'kategoriProduk')->get();
-    return view('produk.daftar-produk')->with(array('produk' => $produk));
+    $produk = Produk::join('penjual', 'penjual.id_penjual', '=', 'produk.id_penjual')->join('indonesia_cities',  'indonesia_cities.code', '=', 'penjual.kota')->get();
+    // $kota = \Indonesia::allCities();
+    return view('produk.daftar-produk')->with(array('produk' => $produk,));
   }
 
   public function kategori(Request $request, $id_kategori)
   {
-    $produk = Produk::whereIdKategori($id_kategori);
+    $produk = Produk::whereIdKategori($id_kategori)->join('penjual', 'penjual.id_penjual', '=', 'produk.id_penjual')->join('indonesia_cities',  'indonesia_cities.code', '=', 'penjual.kota');
 
     if ($request->has('harga')) {
       $produk->where('harga', '<=', $request->harga);
@@ -40,8 +43,8 @@ class   ProdukController extends Controller
 
   public function detail_produk($id_produk)
   {
-    $produk_detail = Produk::whereIdProduk($id_produk)->with('penjual', 'kategoriProduk')->first();
-    $recommend_produk = Produk::whereIdKategori($produk_detail->id_kategori)->limit(12)->get();
+    $produk_detail = Produk::whereIdProduk($id_produk)->with('penjual', 'kategoriProduk')->join('penjual', 'penjual.id_penjual', '=', 'produk.id_penjual')->join('indonesia_cities',  'indonesia_cities.code', '=', 'penjual.kota')->first();
+    $recommend_produk = Produk::whereIdKategori($produk_detail->id_kategori)->join('penjual', 'penjual.id_penjual', '=', 'produk.id_penjual')->join('indonesia_cities',  'indonesia_cities.code', '=', 'penjual.kota')->limit(12)->get();
     return view('produk.detail-produk')->with(array('produk' => $produk_detail, 'recommend_produk' => $recommend_produk));
   }
 
@@ -102,6 +105,8 @@ class   ProdukController extends Controller
   public function penjual(Request $request, $id_penjual)
   {
     $produk = Produk::whereIdPenjual($id_penjual);
+    // $penjual = Penjual::whereIdPenjual($id_penjual)->first();
+    // $kota = \Indonesia::findCity($penjual->kota);
 
     if ($request->has('harga')) {
       $produk->where('harga', '<=', $request->harga);

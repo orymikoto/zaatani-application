@@ -157,7 +157,7 @@
           @endphp
           @foreach ($produk as $key => $value)
             @if ($value->id_kategori == 1 && $number_row <= 3)
-              <x-cart-produk :produk="$value" />
+              <x-cart-produk :produk="$value" :city="$value->name" />
               @php
                 $number_row += 1;
               @endphp
@@ -192,7 +192,7 @@
           @endphp
           @foreach ($produk as $key => $value)
             @if ($value->id_kategori == 5 && $number_row <= 3)
-              <x-cart-produk :produk="$value" />
+              <x-cart-produk :produk="$value" :city="$value->name" />
               @php
                 $number_row += 1;
               @endphp
@@ -226,7 +226,7 @@
           @endphp
           @foreach ($produk as $key => $value)
             @if ($value->id_kategori == 7 && $number_row <= 3)
-              <x-cart-produk :produk="$value" />
+              <x-cart-produk :produk="$value" :city="$value->name" />
               @php
                 $number_row += 1;
               @endphp
@@ -260,7 +260,7 @@
           @endphp
           @foreach ($produk as $key => $value)
             @if ($value->id_kategori == 8 && $number_row <= 3)
-              <x-cart-produk :produk="$value" />
+              <x-cart-produk :city="$value->name" :produk="$value" />
               @php
                 $number_row += 1;
               @endphp

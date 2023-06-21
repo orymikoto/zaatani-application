@@ -15,8 +15,8 @@
   <main class="flex min-w-[1280px] w-[90%] gap-8">
     {{-- SECTION FILTER --}}
     <section class=" rounded-md shadow-md my-8 w-[15rem] h-[20rem] flex flex-col items-center justify-center">
-      <form action="/mart/kategori-produk/{{ request()->id_kategori }}" method="GET" class="flex flex-col bg-white  h-[15rem] gap-4 p-2 w-full ">
-        @csrf
+      <form action="/penjual/daftar-produk/{{ auth('penjual')->id() }}" method="GET" class="flex flex-col bg-white  h-[15rem] gap-4 p-2 w-full ">
+        {{-- @csrf --}}
         <div class="col-span-6 flex flex-col items-start w-full">
           <p class="text-sky-700 font-medium mx-2">Harga Tertinggi</p>
           <input type="number" min="5000" name="harga" required oninput="this.setCustomValidity('')"

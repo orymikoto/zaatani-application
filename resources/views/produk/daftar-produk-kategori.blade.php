@@ -16,7 +16,7 @@
     {{-- SECTION FILTER --}}
     <section class=" rounded-md shadow-md my-8 flex flex-col items-center justify-center w-[15rem] h-[20rem]">
       <form action="/mart/kategori-produk/{{ request()->id_kategori }}" method="GET" class="flex flex-col h-[15rem] bg-white gap-4 p-2 ">
-        @csrf
+        {{-- @csrf --}}
         <div class="col-span-6 flex flex-col items-start w-full">
           <p class="text-sky-700 font-medium mx-2">Harga Tertinggi</p>
           <input type="number" min="5000" name="harga" required oninput="this.setCustomValidity('')"
@@ -43,7 +43,7 @@
       <p class="font-poppins mb-4 text-neutral-400">{{ $total_data }} produk ditemukan</p>
       <div class="grid xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-2 gap-4 w-full">
         @foreach ($produk as $key => $value)
-          <x-cart-produk :produk="$value" />
+          <x-cart-produk :produk="$value" :city="$value->name" />
         @endforeach
       </div>
       <div class="mt-4">
