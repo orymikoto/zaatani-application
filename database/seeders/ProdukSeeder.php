@@ -362,6 +362,58 @@ class ProdukSeeder extends Seeder
           'id_penjual' => 1,
           'id_kategori' => 5,
         ],
+        [
+          'nama' => 'Cabe Podzilla Chocolate',
+          'deskripsi' => 'Cabe Podzilla Chocolate merupakan varietas baru dari cabe. Cabe ini merupakan hasil dari percobaan persilangan antara cabe podzilla red dengan cabe naga viper yang dilakukan oleh Brian Seal. Persilangan yang tidak disengaja ini ternyata menghasilkan cabe yang berwarna coklat dan diberi nama cabe Podzilla Chocolate.
+
+          Cabe podzilla ini memiliki rasa yang sangat pedas diantara jenis-jenis cabe lainnya. Dari segi aroma, cabe ini hampir mirip dengan cabe Bhut Jolokia yang diberi julukan si cabe setan yang usianya sudah sangat tua.
+          
+          Ciri-ciri tanaman:
+          
+          Termasuk tanaman jenis Capsicum Chinense, memiliki rasa yang super pedas.
+          Pohonnya besar dan mudah berbuah.
+          Buah yang dihasilkan berukuran besar.
+          Saat muda berwarna hijau dan setelah matang berwarna coklat.',
+          'harga' => 40000,
+          'satuan' => ' 20 biji',
+          'foto_produk' => 'public\images\foto_produk\pertanian organik\cabe podzilla chocolate.jpg',
+          'id_penjual' => 1,
+          'id_kategori' => 5,
+        ],
+        [
+          'nama' => 'Tomat Ungu',
+          'deskripsi' => 'Tomat (Solanum lycopersicum) adalah tumbuhan asli Amerika Tengah dan Selatan, dari Meksiko hingga Peru. Tomat Indigo Rose adalah salah satu varietas hasil persilangan antara tomat ungu-hitam murni dengan tomat merah. Tomat ini termasuk varietas yang tergolong aneh karena memiliki warna ungu. Dari luar tomat ini terlihat lebih hitam tapi ketika dibelah, daging buahnya berair dan warnanya ungu kemerahan. Tapi tomat ini memiliki rasa yang enak dengan kandungan anthocyanin (sejenis antioksidan khusus) yang sangat tinggi. Kandungan zat anthocyanin ini berguna untuk melawan penyakit kanker dan diabetes. Antioksidan yang terkandung di dalamnya dapat bertahan lebih lama daripada tomat pada umumnya karena pigmen alaminya mampu memperlambat proses pembusukan.',
+          'harga' => 25000,
+          'satuan' => ' 20 biji',
+          'foto_produk' => 'public\images\foto_produk\pertanian organik\tomat ungu.jpg',
+          'id_penjual' => 1,
+          'id_kategori' => 5,
+        ],
+        [
+          'nama' => 'Stawberry Popcorn',
+          'deskripsi' => 'Strawberry popcorn / Popcorn stroberi (Zea mays) adalah varietas jagung yang memiliki biji jagung yang berukuran kecil dan lucu, terlihat seperti strawberry besar. Bijinya berwarna magenta-merah mengkilap. Ukuran panjang buahnya sekitar 2-3, 4 inci. Tinggi tanaman sekitar 4 kaki dengan diameter batang sekitar 8-12 inci. Tiap tanaman bisa menghasilkan buah sekitar 2 hingga 4 tongkol.
+
+          Sama seperti jenis jagung lainnya, penyerbukan popcorn stroberi juga dibantu oleh angin dengan cara penyerbukan silang dengan varietas lainnya yang juga ditanam didekatnya. Untuk mendapatkan hasil popcorn strawberry yang baik dan untuk mencegah terjadinya kelainan biji, sebaiknya tanam popcorn strawberry dengan jarak 25 kaki dari varietas jagung manis atau jagung lainnya.
+          
+          Varietas jagung ini sangat populer dan telah dipelihara oleh masyarakat adat di Mesoamerika dari zaman prasejarah.',
+          'harga' => 25000,
+          'satuan' => ' 20 biji',
+          'foto_produk' => 'public\images\foto_produk\pertanian organik\strawberry popcorn.jpg',
+          'id_penjual' => 1,
+          'id_kategori' => 5,
+        ],
+        [
+          'nama' => 'Turi Putih',
+          'deskripsi' => 'Bunga Turi atau nama ilmiahnya Sesbania grandiflora adalah tanaman yang berasal dari Asia Selatan dan Asia Tenggara, tapi sekarang telah tersebar luas hampir di seluruh wilayah tropis di dunia. Bunga yang dihasilkan tanaman ini bentuknya seperti kupu-kupu dan kuncupnya berbentuk sabit, ada yang merah dan juga putih. Yang ini dapat menghasilkan bunga berwarna putih. Bunganya bisa dimakan dan biasanya dijadikan campuran pecel.
+
+          Tanaman turi tumbuh dengan batang berkayu dan dapat tumbuh hingga 5-12 meter. Beberapa bagian dari tanaman turi bisa dimanfaatkan seperti daun, bunga dan polongnya yang bisa dimakan. Selain itu, turi juga biasanya dijadikan sebagai obat untuk mengobati beberapa jenis penyakit.',
+          'harga' => 25000,
+          'satuan' => ' 20 biji',
+          'foto_produk' => 'public\images\foto_produk\pertanian organik\turi putih.jpg',
+          'id_penjual' => 1,
+          'id_kategori' => 5,
+        ],
+
 
 
         [
@@ -382,6 +434,17 @@ class ProdukSeeder extends Seeder
           'foto_produk' => 'public\images\foto_produk\pupuk dan obat\insektisida curacron.jpg',
           'id_penjual' => 1,
           'id_kategori' => 7,
+        ],
+        [
+          'nama' => 'Turi Putih',
+          'deskripsi' => 'Bunga Turi atau nama ilmiahnya Sesbania grandiflora adalah tanaman yang berasal dari Asia Selatan dan Asia Tenggara, tapi sekarang telah tersebar luas hampir di seluruh wilayah tropis di dunia. Bunga yang dihasilkan tanaman ini bentuknya seperti kupu-kupu dan kuncupnya berbentuk sabit, ada yang merah dan juga putih. Yang ini dapat menghasilkan bunga berwarna putih. Bunganya bisa dimakan dan biasanya dijadikan campuran pecel.
+
+          Tanaman turi tumbuh dengan batang berkayu dan dapat tumbuh hingga 5-12 meter. Beberapa bagian dari tanaman turi bisa dimanfaatkan seperti daun, bunga dan polongnya yang bisa dimakan. Selain itu, turi juga biasanya dijadikan sebagai obat untuk mengobati beberapa jenis penyakit.',
+          'harga' => 25000,
+          'satuan' => ' 20 biji',
+          'foto_produk' => 'public\images\foto_produk\pertanian organik\turi putih.jpg',
+          'id_penjual' => 1,
+          'id_kategori' => 5,
         ],
     ]);
 
