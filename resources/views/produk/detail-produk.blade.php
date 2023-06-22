@@ -11,13 +11,19 @@
   <script>
     function increaseValue() {
       var input = document.getElementById('quantity');
+      var buy = document.getElementById('buy')
+      x = parseInt(input.value) + 1
       input.value = parseInt(input.value) + 1;
+      buy.href = `/mart/beli-produk/${produk->id_produk}?jumlah=${ x }`
     }
 
     function decreaseValue() {
       var input = document.getElementById('quantity');
+      var buy = document.getElementById('buy')
       var value = parseInt(input.value);
+      x = value > 1 ? value - 1 : 1
       input.value = value > 1 ? value - 1 : 1;
+      buy.href = value > 1 ? `/mart/beli-produk/${produk->id_produk}?jumlah=${ x }`
     }
   </script>
 </head>
@@ -25,7 +31,7 @@
 <body class="antialiased flex flex-col items-center relative min-h-screen justify-between bg-neutral-100">
   <x-navbar />
 
-  <main class="flex flex-col min-w-[1280px] w-[90%]">
+  <main class="flex flex-col mx-auto max-w-[1280px]">
     <!-- component -->
 
 
@@ -82,9 +88,9 @@
             </div>
             <div class="flex items-center">
               <span class="title-font font-medium text-2xl text-gray-900">Rp. {{ $produk->harga }}</span>
-              <button
+              <a id="buy" href="/mart/beli-produk/{{ $produk->id_produk }}?jumlah=1"
                 class="flex ml-auto font-poppins items-center text-white bg-emerald-500 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-600 duration-200 rounded">Beli
-                Sekarang</button>
+                Sekarang</a>
               <button
                 class="rounded-md border-sky-700 font-poppins w-10 h-10 hover:text-emerald-500 duration-200 bg-sky-200  hover:border-sky-500 border-2 inline-flex items-center justify-center text-gray-500 ml-4">
                 <img src="/icons/add-cart.svg" class="w-8 h-8 object-contain object-center" alt="">

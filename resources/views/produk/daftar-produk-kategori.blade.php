@@ -12,7 +12,7 @@
 
 <body class="antialiased flex flex-col items-center justify-between relative min-h-screen bg-neutral-100">
   <x-navbar />
-  <main class="flex min-w-[1280px] w-[90%] gap-8">
+  <main class="flex max-w-[1280px] mx-auto gap-8">
     {{-- SECTION FILTER --}}
     <section class=" rounded-md shadow-md my-8 flex flex-col items-center justify-center w-[15rem] h-[20rem]">
       <form action="/mart/kategori-produk/{{ request()->id_kategori }}" method="GET" class="flex flex-col h-[15rem] bg-white gap-4 p-2 ">

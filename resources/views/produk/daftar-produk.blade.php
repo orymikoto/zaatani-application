@@ -31,7 +31,7 @@
 
 <body class="antialiased flex flex-col items-center relative min-h-screen bg-neutral-50">
   <x-navbar />
-  <main class="flex flex-col min-w-[1280px] w-[90%]">
+  <main class="flex flex-col mx-auto max-w-[1280px]">
     {{-- SECTION HEADER --}}
     <h1 class="font-comfortaa my-4 text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-tr to-sky-400 from-pink-600">ZAATANI
       MART</h1>

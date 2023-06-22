@@ -12,7 +12,7 @@
 
 <body class="antialiased flex flex-col items-center justify-between relative min-h-screen bg-neutral-100">
   <x-navbar />
-  <main class="flex min-w-[1280px] w-[90%] gap-8">
+  <main class="flex max-w-[1280px] gap-8">
     {{-- SECTION FILTER --}}
     <section class=" rounded-md shadow-md my-8 w-[15rem] h-[20rem] flex flex-col items-center justify-center">
       <form action="/penjual/daftar-produk/{{ auth('penjual')->id() }}" method="GET" class="flex flex-col bg-white  h-[15rem] gap-4 p-2 w-full ">

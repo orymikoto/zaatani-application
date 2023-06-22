@@ -68,7 +68,7 @@
         </div>
         <img src="/icons/right-arrow.svg" class="w-12 h-12" alt="">
       </a>
-      <a href="/pelatihan"
+      {{-- <a href="/pelatihan"
         class="flex items-center gap-4 px-4 w-[32rem] bg-gradient-to-br from-sky-400 to-sky-600 rounded-lg h-[8rem] hover:shadow-md hover:shadow-sky-400/75 duration-200 cursor-pointer">
         <img src="/icons/class.svg" class="w-16 h-16 p-2 rounded-md bg-white  " alt="">
         <div class="flex flex-col flex-1">
@@ -76,7 +76,7 @@
           <p class="text-white font-poppins ">Mari Belajar Modern dalam Bertani!</p>
         </div>
         <img src="/icons/right-arrow.svg" class="w-12 h-12" alt="">
-      </a>
+      </a> --}}
     </section>
 
     <section class="flex w-full">
