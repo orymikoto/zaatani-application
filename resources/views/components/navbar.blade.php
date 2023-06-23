@@ -3,7 +3,7 @@
     <div class="flex gap-2 items-center justify-between h-16">
       <!-- Logo -->
       <div class="flex-shrink-0">
-        <a href="/" class="text-neutral-800 text-lg font-semibold">Your Logo</a>
+        <a href="/" class="text-neutral-800 text-lg font-semibold"><img src="/logo.png" class="w-16 h-16 object-cover" alt=""></a>
       </div>
 
       <!-- Menu -->

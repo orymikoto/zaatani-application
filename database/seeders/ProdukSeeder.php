@@ -172,7 +172,7 @@ class ProdukSeeder extends Seeder
         Dimensi LCD: 80 mm x 70 mm',
         'harga' => 36000,
         'satuan' => '1 pcs',
-        'foto_produk' => 'public\images\foto_produk\mesin dan alat\digital thermometer hygrometer.jpg',
+        'foto_produk' => '/images/foto_produk/mesin/1.jpg',
         'id_penjual' => 1,
         'id_kategori' => 8,
       ],
@@ -194,7 +194,7 @@ class ProdukSeeder extends Seeder
         Untuk penggunaannya, gunakan tongkat atau pipa sebagai gagang gergaji/gunting',
         'harga' => 105000,
         'satuan' => '1 pcs',
-        'foto_produk' => 'public\images\foto_produk\mesin dan alat\gergaji dahan pohon.jpg',
+        'foto_produk' => '/images/foto_produk/mesin/2.jpg',
         'id_penjual' => 1,
         'id_kategori' => 8,
       ],
@@ -210,7 +210,7 @@ class ProdukSeeder extends Seeder
         Ukuran: 10 cm x 33 m',
         'harga' => 85000,
         'satuan' => '1 pcs',
-        'foto_produk' => 'public\images\foto_produk\mesin dan alat\lakban plastik uv (20cm x 33meter).jpg',
+        'foto_produk' => '/images/foto_produk/mesin/3.jpg',
         'id_penjual' => 1,
         'id_kategori' => 8,
       ],
@@ -233,13 +233,13 @@ class ProdukSeeder extends Seeder
           Temperatur maksimum air yang digunakan tidak boleh melebihi dari 43°C atau 119°F.',
         'harga' => 110000,
         'satuan' => '1 pcs',
-        'foto_produk' => 'public\images\foto_produk\mesin dan alat\pompa air high pressure.jpg',
+        'foto_produk' => '/images/foto_produk/mesin/4.jpg',
         'id_penjual' => 1,
         'id_kategori' => 8,
-        ],
-        [
-          'nama' => 'Pressure Sprayer Maspion',
-          'deskripsi' => 'Pressure Sprayer Maspion MPS-5 terbuat dari bahan plastik yang kuat dan memiliki kualitas yang baik. Pressure Sprayer merek Maspion ini merupakan sprayer yang penggunaannya dengan cara digendong (seperti memakai tas punggung), mempermudah dalam melakukan proses penyiraman, pemupukan maupun penyemprotan pestisida pada tanaman.
+      ],
+      [
+        'nama' => 'Pressure Sprayer Maspion',
+        'deskripsi' => 'Pressure Sprayer Maspion MPS-5 terbuat dari bahan plastik yang kuat dan memiliki kualitas yang baik. Pressure Sprayer merek Maspion ini merupakan sprayer yang penggunaannya dengan cara digendong (seperti memakai tas punggung), mempermudah dalam melakukan proses penyiraman, pemupukan maupun penyemprotan pestisida pada tanaman.
 
           Pressure Sprayer Maspion dilengkapi dengan corong bermulut lebih lebar yang akan memudahkan pengisian cairan, serta terdapat katup pengaman untuk mengatur tekanan cairan, sehingga dapat menghindari ledakan pada tangki. Penyangga pegangan sprayer ini kuat, dan yang lebih menyenangkan adalah volume air yang disemprotkan dapat diatur sesuai dengan keinginan Anda.
           
@@ -249,15 +249,15 @@ class ProdukSeeder extends Seeder
           Tekanan maksimal yang dapat dikeluarkan sebesar 5kg/cm2, sedangkan tekanan operasionalnya sebesar 3kg/cm2
           Lebih ekonomis, mudah digunakan, praktis
           Kuat, kualitasnya bagus dan tahan lama',
-          'harga' => 160000,
-          'satuan' => '1 pcs',
-          'foto_produk' => 'public\images\foto_produk\mesin dan alat\pressure sprayer maspion.jpg',
-          'id_penjual' => 1,
-          'id_kategori' => 8,
-        ],
-        [
-          'nama' => 'Paranet 85% (3x100meter)',
-          'deskripsi' => 'Merek You-V, kualitas terbaik di kelasnya. Boleh dibandingkan dengan paranet lainnya, kualitas jauh lebih bagus.
+        'harga' => 160000,
+        'satuan' => '1 pcs',
+        'foto_produk' => '/images/foto_produk/mesin/5.jpg',
+        'id_penjual' => 1,
+        'id_kategori' => 8,
+      ],
+      [
+        'nama' => 'Paranet 85% (3x100meter)',
+        'deskripsi' => 'Merek You-V, kualitas terbaik di kelasnya. Boleh dibandingkan dengan paranet lainnya, kualitas jauh lebih bagus.
 
           Paranet 85% Lebar 3 Meter juga dikenal sebagai shading net (pembuat naungan) merupakan jaring yang dapat menyaring intensitas cahaya matahari langsung dan untuk mencegah masuknya air hujan secara berlebihan.
           
@@ -270,26 +270,26 @@ class ProdukSeeder extends Seeder
           Terbuat dari plastik berwarna hitam
           Kualitas sangat baik dan jauh lebih unggul dari merek-merek paranet lainnya yang ada di pasaran (baik impor maupun lokal).
           Berat per roll: 20 kg',
-          'harga' => 1550000,
-          'satuan' => '1 pcs',
-          'foto_produk' => 'public\images\foto_produk\mesin dan alat\paranet 85% (3x100meter).jpg',
-          'id_penjual' => 1,
-          'id_kategori' => 8,
-        ],
-        [
-          'nama' => 'Sarung tangan Latex',
-          'deskripsi' => 'Sarung tangan  merupakan salah satu perlengkapan berkebun yang berfungsi sebagai pelindung tangan saat bekerja dan dari bahan-bahan berbahaya. Sarung tangan yang Kami jual berbahan karet lateks sehingga nyaman dan melengket baik pada kulit saat digunakan.
+        'harga' => 1550000,
+        'satuan' => '1 pcs',
+        'foto_produk' => '/images/foto_produk/mesin/6.jpg',
+        'id_penjual' => 1,
+        'id_kategori' => 8,
+      ],
+      [
+        'nama' => 'Sarung tangan Latex',
+        'deskripsi' => 'Sarung tangan  merupakan salah satu perlengkapan berkebun yang berfungsi sebagai pelindung tangan saat bekerja dan dari bahan-bahan berbahaya. Sarung tangan yang Kami jual berbahan karet lateks sehingga nyaman dan melengket baik pada kulit saat digunakan.
 
           Mudah digunakan dan bersifat anti slip karena terbuat dari bahan latex sehingga barang yang digenggam saat memakai sarung tangan ini tidak mudah jatuh atau tergelincir meski dalam kondisi basah sekalipun.',
-          'harga' => 15000,
-          'satuan' => '1 pcs',
-          'foto_produk' => 'public\images\foto_produk\mesin dan alat\sarung tangan latex.jpg',
-          'id_penjual' => 1,
-          'id_kategori' => 8,
-        ],
-        [
-          'nama' => 'Water Timer',
-          'deskripsi' => 'Fitur dan Spesifikasi Produk:
+        'harga' => 15000,
+        'satuan' => '1 pcs',
+        'foto_produk' => '/images/foto_produk/mesin/7.jpg',
+        'id_penjual' => 1,
+        'id_kategori' => 8,
+      ],
+      [
+        'nama' => 'Water Timer',
+        'deskripsi' => 'Fitur dan Spesifikasi Produk:
             Material: Plastik ABS, waterproof dan aman untuk digunakan.
             Warna: Hijau
             Baterai: 2 x 1.5V AAA
@@ -308,63 +308,63 @@ class ProdukSeeder extends Seeder
             
             Produk ini hanya diperuntukkan untuk pengontrolan lokal, seperti apartement, rumah, cottage, taman, kebun, dan lain-lain.
             Minimum pressure: 0.6 bar, namun berdasarkan pengetesan, tandon 3 meter sudah bisa.',
-          'harga' => 190000,
-          'satuan' => '1 pcs',
-          'foto_produk' => 'public\images\foto_produk\mesin dan alat\water timer.jpg',
-          'id_penjual' => 1,
-          'id_kategori' => 8,
-        ],
+        'harga' => 190000,
+        'satuan' => '1 pcs',
+        'foto_produk' => '/images/foto_produk/mesin/8.jpg',
+        'id_penjual' => 1,
+        'id_kategori' => 8,
+      ],
 
 
-        [
-          'nama' => 'Asparagus',
-          'deskripsi' => 'Asparagus F1 merupakan jenis tanaman yang dimanfaatkan sebagai sayuran. Tanaman ini termasuk dalam genus Asparagus dengan nama ilmiah Asparagus officinalis. Biasanya dimanfaatkan bagian batang mudanya yang menghasilkan rasa renyah dan lembut. Tanaman premium ini dulunya hanya dinikmati oleh keluarga kerajaan di Mesir kuno.
+      [
+        'nama' => 'Asparagus',
+        'deskripsi' => 'Asparagus F1 merupakan jenis tanaman yang dimanfaatkan sebagai sayuran. Tanaman ini termasuk dalam genus Asparagus dengan nama ilmiah Asparagus officinalis. Biasanya dimanfaatkan bagian batang mudanya yang menghasilkan rasa renyah dan lembut. Tanaman premium ini dulunya hanya dinikmati oleh keluarga kerajaan di Mesir kuno.
 
           Asparagus terbukti sangat baik dalam hal membantu kelancaran urin dan secara otomatis akan membantu menjaga kesehatan ginjal. Selain itu, sangat baik dikonsumsi oleh penderita kolesterol tinggi ataupun tekanan darah tinggi.',
-          'harga' => 50000,
-          'satuan' => ' 30 biji',
-          'foto_produk' => 'public\images\foto_produk\pertanian organik\asparagus.jpg',
-          'id_penjual' => 1,
-          'id_kategori' => 5,
-        ],
-        [
-          'nama' => 'Terong Ungu',
-          'deskripsi' => 'Terong ungu (Solanum melongena) termasuk tanaman terna perennial yang buahnya dapat dikonsumsi sebagai sayuran. Terong ungu berasal dari Asia bagian Selatan dan Asia bagian Timur. Tanaman terong ungu memiliki batang berkayu, bulat, tegak, dan percabangannya simpodial.
+        'harga' => 50000,
+        'satuan' => ' 30 biji',
+        'foto_produk' => '/images/foto_produk/organik/1.jpg',
+        'id_penjual' => 1,
+        'id_kategori' => 5,
+      ],
+      [
+        'nama' => 'Terong Ungu',
+        'deskripsi' => 'Terong ungu (Solanum melongena) termasuk tanaman terna perennial yang buahnya dapat dikonsumsi sebagai sayuran. Terong ungu berasal dari Asia bagian Selatan dan Asia bagian Timur. Tanaman terong ungu memiliki batang berkayu, bulat, tegak, dan percabangannya simpodial.
           Kandungan dalam buah terong ungu antara lain kalsium, serat, flavonoid, vitamin, dan mineral. Terong ungu memiliki banyak manfaat bagi kesehatan, yaitu dapat membantu pencernaan, sumber serat yang baik untuk penderita jantung, kolesterol tinggi, dan diabetes. Kalsium yang terkandung dalam terong ungu tinggi, membuatnya menjadi makanan yang dapat memperkuat tulang dan persendian. Selain itu kandungan mineral zat besi yang dimiliki terong ungu mampu mencegah anemia.',
-          'harga' => 50000,
-          'satuan' => ' 30 biji',
-          'foto_produk' => 'public\images\foto_produk\pertanian organik\terong ungu.jpg',
-          'id_penjual' => 1,
-          'id_kategori' => 5,
-        ],
-        [
-          'nama' => 'Jagung Permata',
-          'deskripsi' => 'Benih jagung permata atau dikenal pula dengan nama jagung pelangi, di luar negeri dijuluki sebagai Glass Gem Corn. Jagung ini merupakan salah satu varietas yang terkenal, berasal dari hasil persilangan sehingga menghasilkan biji jagung yang berwarna-warni layaknya pelangi. Permukaan bijinya mengkilap terlihat seperti permata / manik-manik kaca.
+        'harga' => 50000,
+        'satuan' => ' 30 biji',
+        'foto_produk' => '/images/foto_produk/organik/2.jpg',
+        'id_penjual' => 1,
+        'id_kategori' => 5,
+      ],
+      [
+        'nama' => 'Jagung Permata',
+        'deskripsi' => 'Benih jagung permata atau dikenal pula dengan nama jagung pelangi, di luar negeri dijuluki sebagai Glass Gem Corn. Jagung ini merupakan salah satu varietas yang terkenal, berasal dari hasil persilangan sehingga menghasilkan biji jagung yang berwarna-warni layaknya pelangi. Permukaan bijinya mengkilap terlihat seperti permata / manik-manik kaca.
 
           Jagung unik ini ditemukan pertama kali oleh seorang petani bernama Carl Barnes lalu kemudian diproduksi oleh perusahaan benih skala kecil di Arizona. Sangat ideal dibuat popcorn, dikonsumsi langsung setelah direbus ataupun dibuat tepung.',
-          'harga' => 55000,
-          'satuan' => ' 25 biji',
-          'foto_produk' => 'public\images\foto_produk\pertanian organik\jagung permata.jpeg',
-          'id_penjual' => 1,
-          'id_kategori' => 5,
-        ],
-        [
-          'nama' => 'Kenikir',
-          'deskripsi' => 'Tanaman Kenikir, tanaman ini memiliki nama ilmiah Cosmos Caudatus. Tanaman yang dapat tumbuh mencapai tinggi 1 meter ini mempunyai daun yang bertangkai panjang, dan duduk daunnya berhadapan, sehingga terbagi menyirip menjadi 2-3 tangkai. Tumbuhan tahunan yang memiliki batang pipa isi termasuk dalam genus Cosmos dan keluarga Asteraceae. Tanaman ini biasanya tersebar di daerah Amerika Tengah dengan suhu yang panas.
+        'harga' => 55000,
+        'satuan' => ' 25 biji',
+        'foto_produk' => '/images/foto_produk/organik/3.jpeg',
+        'id_penjual' => 1,
+        'id_kategori' => 5,
+      ],
+      [
+        'nama' => 'Kenikir',
+        'deskripsi' => 'Tanaman Kenikir, tanaman ini memiliki nama ilmiah Cosmos Caudatus. Tanaman yang dapat tumbuh mencapai tinggi 1 meter ini mempunyai daun yang bertangkai panjang, dan duduk daunnya berhadapan, sehingga terbagi menyirip menjadi 2-3 tangkai. Tumbuhan tahunan yang memiliki batang pipa isi termasuk dalam genus Cosmos dan keluarga Asteraceae. Tanaman ini biasanya tersebar di daerah Amerika Tengah dengan suhu yang panas.
           Kelebihan tanaman ini adalah:
 
           Memiliki khasiat yang mampu menyembuhkan penyakit mematikan seperti kanker
           Dapat mengatasi tidak stabilnya peredaran darah
           Dapat menguatkan tulang, menambah nafsu makan, menghalangi proses penuaan dini, menghilangkan bau tidak sedap di dalam mulut, dan dapat mengusir keberadaan nyamuk',
-          'harga' => 25000,
-          'satuan' => ' 20 biji',
-          'foto_produk' => 'public\images\foto_produk\pertanian organik\kenikir.jpg',
-          'id_penjual' => 1,
-          'id_kategori' => 5,
-        ],
-        [
-          'nama' => 'Cabe Podzilla Chocolate',
-          'deskripsi' => 'Cabe Podzilla Chocolate merupakan varietas baru dari cabe. Cabe ini merupakan hasil dari percobaan persilangan antara cabe podzilla red dengan cabe naga viper yang dilakukan oleh Brian Seal. Persilangan yang tidak disengaja ini ternyata menghasilkan cabe yang berwarna coklat dan diberi nama cabe Podzilla Chocolate.
+        'harga' => 25000,
+        'satuan' => ' 20 biji',
+        'foto_produk' => '/images/foto_produk/organik/4.jpg',
+        'id_penjual' => 1,
+        'id_kategori' => 5,
+      ],
+      [
+        'nama' => 'Cabe Podzilla Chocolate',
+        'deskripsi' => 'Cabe Podzilla Chocolate merupakan varietas baru dari cabe. Cabe ini merupakan hasil dari percobaan persilangan antara cabe podzilla red dengan cabe naga viper yang dilakukan oleh Brian Seal. Persilangan yang tidak disengaja ini ternyata menghasilkan cabe yang berwarna coklat dan diberi nama cabe Podzilla Chocolate.
 
           Cabe podzilla ini memiliki rasa yang sangat pedas diantara jenis-jenis cabe lainnya. Dari segi aroma, cabe ini hampir mirip dengan cabe Bhut Jolokia yang diberi julukan si cabe setan yang usianya sudah sangat tua.
           
@@ -374,51 +374,51 @@ class ProdukSeeder extends Seeder
           Pohonnya besar dan mudah berbuah.
           Buah yang dihasilkan berukuran besar.
           Saat muda berwarna hijau dan setelah matang berwarna coklat.',
-          'harga' => 40000,
-          'satuan' => ' 20 biji',
-          'foto_produk' => 'public\images\foto_produk\pertanian organik\cabe podzilla chocolate.jpg',
-          'id_penjual' => 1,
-          'id_kategori' => 5,
-        ],
-        [
-          'nama' => 'Tomat Ungu',
-          'deskripsi' => 'Tomat (Solanum lycopersicum) adalah tumbuhan asli Amerika Tengah dan Selatan, dari Meksiko hingga Peru. Tomat Indigo Rose adalah salah satu varietas hasil persilangan antara tomat ungu-hitam murni dengan tomat merah. Tomat ini termasuk varietas yang tergolong aneh karena memiliki warna ungu. Dari luar tomat ini terlihat lebih hitam tapi ketika dibelah, daging buahnya berair dan warnanya ungu kemerahan. Tapi tomat ini memiliki rasa yang enak dengan kandungan anthocyanin (sejenis antioksidan khusus) yang sangat tinggi. Kandungan zat anthocyanin ini berguna untuk melawan penyakit kanker dan diabetes. Antioksidan yang terkandung di dalamnya dapat bertahan lebih lama daripada tomat pada umumnya karena pigmen alaminya mampu memperlambat proses pembusukan.',
-          'harga' => 25000,
-          'satuan' => ' 20 biji',
-          'foto_produk' => 'public\images\foto_produk\pertanian organik\tomat ungu.jpg',
-          'id_penjual' => 1,
-          'id_kategori' => 5,
-        ],
-        [
-          'nama' => 'Stawberry Popcorn',
-          'deskripsi' => 'Strawberry popcorn / Popcorn stroberi (Zea mays) adalah varietas jagung yang memiliki biji jagung yang berukuran kecil dan lucu, terlihat seperti strawberry besar. Bijinya berwarna magenta-merah mengkilap. Ukuran panjang buahnya sekitar 2-3, 4 inci. Tinggi tanaman sekitar 4 kaki dengan diameter batang sekitar 8-12 inci. Tiap tanaman bisa menghasilkan buah sekitar 2 hingga 4 tongkol.
+        'harga' => 40000,
+        'satuan' => ' 20 biji',
+        'foto_produk' => '/images/foto_produk/organik/5.jpg',
+        'id_penjual' => 1,
+        'id_kategori' => 5,
+      ],
+      [
+        'nama' => 'Tomat Ungu',
+        'deskripsi' => 'Tomat (Solanum lycopersicum) adalah tumbuhan asli Amerika Tengah dan Selatan, dari Meksiko hingga Peru. Tomat Indigo Rose adalah salah satu varietas hasil persilangan antara tomat ungu-hitam murni dengan tomat merah. Tomat ini termasuk varietas yang tergolong aneh karena memiliki warna ungu. Dari luar tomat ini terlihat lebih hitam tapi ketika dibelah, daging buahnya berair dan warnanya ungu kemerahan. Tapi tomat ini memiliki rasa yang enak dengan kandungan anthocyanin (sejenis antioksidan khusus) yang sangat tinggi. Kandungan zat anthocyanin ini berguna untuk melawan penyakit kanker dan diabetes. Antioksidan yang terkandung di dalamnya dapat bertahan lebih lama daripada tomat pada umumnya karena pigmen alaminya mampu memperlambat proses pembusukan.',
+        'harga' => 25000,
+        'satuan' => ' 20 biji',
+        'foto_produk' => '/images/foto_produk/organik/6.jpg',
+        'id_penjual' => 1,
+        'id_kategori' => 5,
+      ],
+      [
+        'nama' => 'Stawberry Popcorn',
+        'deskripsi' => 'Strawberry popcorn / Popcorn stroberi (Zea mays) adalah varietas jagung yang memiliki biji jagung yang berukuran kecil dan lucu, terlihat seperti strawberry besar. Bijinya berwarna magenta-merah mengkilap. Ukuran panjang buahnya sekitar 2-3, 4 inci. Tinggi tanaman sekitar 4 kaki dengan diameter batang sekitar 8-12 inci. Tiap tanaman bisa menghasilkan buah sekitar 2 hingga 4 tongkol.
 
           Sama seperti jenis jagung lainnya, penyerbukan popcorn stroberi juga dibantu oleh angin dengan cara penyerbukan silang dengan varietas lainnya yang juga ditanam didekatnya. Untuk mendapatkan hasil popcorn strawberry yang baik dan untuk mencegah terjadinya kelainan biji, sebaiknya tanam popcorn strawberry dengan jarak 25 kaki dari varietas jagung manis atau jagung lainnya.
           
           Varietas jagung ini sangat populer dan telah dipelihara oleh masyarakat adat di Mesoamerika dari zaman prasejarah.',
-          'harga' => 25000,
-          'satuan' => ' 20 biji',
-          'foto_produk' => 'public\images\foto_produk\pertanian organik\strawberry popcorn.jpg',
-          'id_penjual' => 1,
-          'id_kategori' => 5,
-        ],
-        [
-          'nama' => 'Turi Putih',
-          'deskripsi' => 'Bunga Turi atau nama ilmiahnya Sesbania grandiflora adalah tanaman yang berasal dari Asia Selatan dan Asia Tenggara, tapi sekarang telah tersebar luas hampir di seluruh wilayah tropis di dunia. Bunga yang dihasilkan tanaman ini bentuknya seperti kupu-kupu dan kuncupnya berbentuk sabit, ada yang merah dan juga putih. Yang ini dapat menghasilkan bunga berwarna putih. Bunganya bisa dimakan dan biasanya dijadikan campuran pecel.
+        'harga' => 25000,
+        'satuan' => ' 20 biji',
+        'foto_produk' => '/images/foto_produk/organik/7.jpg',
+        'id_penjual' => 1,
+        'id_kategori' => 5,
+      ],
+      [
+        'nama' => 'Turi Putih',
+        'deskripsi' => 'Bunga Turi atau nama ilmiahnya Sesbania grandiflora adalah tanaman yang berasal dari Asia Selatan dan Asia Tenggara, tapi sekarang telah tersebar luas hampir di seluruh wilayah tropis di dunia. Bunga yang dihasilkan tanaman ini bentuknya seperti kupu-kupu dan kuncupnya berbentuk sabit, ada yang merah dan juga putih. Yang ini dapat menghasilkan bunga berwarna putih. Bunganya bisa dimakan dan biasanya dijadikan campuran pecel.
 
           Tanaman turi tumbuh dengan batang berkayu dan dapat tumbuh hingga 5-12 meter. Beberapa bagian dari tanaman turi bisa dimanfaatkan seperti daun, bunga dan polongnya yang bisa dimakan. Selain itu, turi juga biasanya dijadikan sebagai obat untuk mengobati beberapa jenis penyakit.',
-          'harga' => 25000,
-          'satuan' => ' 20 biji',
-          'foto_produk' => 'public\images\foto_produk\pertanian organik\turi putih.jpg',
-          'id_penjual' => 1,
-          'id_kategori' => 5,
-        ],
+        'harga' => 25000,
+        'satuan' => ' 20 biji',
+        'foto_produk' => '/images/foto_produk/organik/8.jpg',
+        'id_penjual' => 1,
+        'id_kategori' => 5,
+      ],
 
 
 
-        [
-          'nama' => 'Insektisida Curacron',
-          'deskripsi' => 'Insektisida Curacron 500EC – 100 ml
+      [
+        'nama' => 'Insektisida Curacron',
+        'deskripsi' => 'Insektisida Curacron 500EC – 100 ml
 
           Curacron 500EC merupakan insektisida yang mengandung bahan kimia beracun yang dapat membasmi segala jenis hama serangga tanaman dengan kontak dan lambung. Dengan demikian insektisida ini sangat efisien dan efektif digunakan. Dengan cepat dapat mematikan serangga. Curacron berbentuk cairan kuning kecoklatan pekat yang dikemas dalam botol 100 ml dan memiliki bahan aktif Profenofos 500 g/l.
           
@@ -429,23 +429,23 @@ class ProdukSeeder extends Seeder
           – Mengendalikan hama serangga ulat grayak, kutu daun, kutu putih, lalat buah, belalang, ulat papillo, dan hama thrips.
           
           Curacron 500EC mengadung bahan kimia beracun, dalam penggunaannya harus dilakukan secara hati-hati. Baca dengan seksama aturan pakai dan cara penggunaan yang terdapat pada kemasan.',
-          'harga' => 25000,
-          'satuan' => ' 20 biji',
-          'foto_produk' => 'public\images\foto_produk\pupuk dan obat\insektisida curacron.jpg',
-          'id_penjual' => 1,
-          'id_kategori' => 7,
-        ],
-        [
-          'nama' => 'Turi Putih',
-          'deskripsi' => 'Bunga Turi atau nama ilmiahnya Sesbania grandiflora adalah tanaman yang berasal dari Asia Selatan dan Asia Tenggara, tapi sekarang telah tersebar luas hampir di seluruh wilayah tropis di dunia. Bunga yang dihasilkan tanaman ini bentuknya seperti kupu-kupu dan kuncupnya berbentuk sabit, ada yang merah dan juga putih. Yang ini dapat menghasilkan bunga berwarna putih. Bunganya bisa dimakan dan biasanya dijadikan campuran pecel.
+        'harga' => 25000,
+        'satuan' => ' 20 biji',
+        'foto_produk' => '/images/foto_produk/pupuk/1.jpg',
+        'id_penjual' => 1,
+        'id_kategori' => 7,
+      ],
+      [
+        'nama' => 'Turi Putih',
+        'deskripsi' => 'Bunga Turi atau nama ilmiahnya Sesbania grandiflora adalah tanaman yang berasal dari Asia Selatan dan Asia Tenggara, tapi sekarang telah tersebar luas hampir di seluruh wilayah tropis di dunia. Bunga yang dihasilkan tanaman ini bentuknya seperti kupu-kupu dan kuncupnya berbentuk sabit, ada yang merah dan juga putih. Yang ini dapat menghasilkan bunga berwarna putih. Bunganya bisa dimakan dan biasanya dijadikan campuran pecel.
 
           Tanaman turi tumbuh dengan batang berkayu dan dapat tumbuh hingga 5-12 meter. Beberapa bagian dari tanaman turi bisa dimanfaatkan seperti daun, bunga dan polongnya yang bisa dimakan. Selain itu, turi juga biasanya dijadikan sebagai obat untuk mengobati beberapa jenis penyakit.',
-          'harga' => 25000,
-          'satuan' => ' 20 biji',
-          'foto_produk' => 'public\images\foto_produk\pertanian organik\turi putih.jpg',
-          'id_penjual' => 1,
-          'id_kategori' => 5,
-        ],
+        'harga' => 25000,
+        'satuan' => ' 20 biji',
+        'foto_produk' => '/images/foto_produk/pupuk/2.jpg',
+        'id_penjual' => 1,
+        'id_kategori' => 7,
+      ],
     ]);
 
     for ($i = 1; $i <= 200; $i++) {
